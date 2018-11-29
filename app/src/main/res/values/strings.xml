@@ -1,0 +1,196 @@
+<resources>
+    <string name="app_name">MobileOffice</string>
+    <string name="app_id">MOCR000004</string>
+    <string name="notice">공지사항</string>
+    <string name="content">내용</string>
+    <string name="confirm">확인</string>
+    <string name="cancel">취소</string>
+    <string name="warning2">주의</string>
+    <string name="wifi_network">Wi-Fi 연결을 해제하고 VPN 업무망에 접속 합니다.\n(3G/LTE망으로만 접속 가능)</string>
+    <string name="close">닫기</string>
+    <string name="open_drawer">Open drawer</string>
+    <string name="close_drawer">Close drawer</string>
+    <string name="mobile_group">모바일 그룹웨어</string>
+    <string name="mobile_sf">&#160;&#160;현장업무</string>
+    <string name="select_skin">스킨선택</string>
+    <string name="select_app">앱보기 설정</string>
+    <string name="set">적용</string>
+    <string name="app_all">앱 전체 보기</string>
+    <string name="app_frequency">주요 앱만 보기</string>
+    <string name="login">로그인</string>
+    <string name="login_fingerprint">지문 로그인</string>
+
+    <string name="start">시작하기</string>
+    <string name="go_update">업데이트 버전이 존재합니다.\n설치 후 사용해주세요.</string>
+    <string name="notice_null">공지사항이 없습니다.</string>
+    <string name="permission_grant">모바일 오피스 사용을 위해 권한을 허용 후 사용해 주세요.</string>
+    <string name="process_pre_vpn">보안모듈 구동 중입니다.</string>
+    <string name="login_user_info">&#160;님&#160;&#160;어서오세요.</string>
+    <string name="spassfingerprint">&#160;&#160;  지문인증</string>
+
+    <!-- 식단 -->
+    <string name="sdilja">일자</string>
+    <string name="sdtime">시간</string>
+    <string name="gubun">구분</string>
+    <string name="select_menu">식단표 조회</string>
+    <string name="select_menu_config">식단알림 설정</string>
+    <string name="gg">기관</string>
+    <string name="josik1">조식1</string>
+    <string name="josik">조식</string>
+    <string name="josik2">조식2</string>
+    <string name="jungsik">중식</string>
+    <string name="jungsik1">중식1</string>
+    <string name="jungsik2">중식2</string>
+    <string name="seoksik">석식</string>
+    <string name="seoksik2">석식2</string>
+    <string name="menu_notice">급식이 없는 날은 식단표가\n조회되지 않습니다.</string>
+    <string name="alarmsavequestion">식단메뉴 알림을 설정 하시겠습니까?</string>
+    <string name="alarmsavetoast_reg">식단메뉴 알림 설정이 완료되었습니다.</string>
+    <string name="alarmsavetoast_unreg">식단메뉴 알림 설정이 해제되었습니다.</string>
+    <string name="alarmreceivedmsg">식단표 알림이 도착하였습니다.</string>
+    <string name="alarmhref">식단표확인</string>
+    <string name="alamrunreg">알림해지</string>
+    <string name="finishApp">뒤로 버튼을 한번 더 누르면 종료됩니다.</string>
+    <string name="userID">사원번호</string>
+    <string name="pwd">비밀번호</string>
+    <string name="id_password">사원번호와 하이포탈 비밀번호를 입력해 주세요</string>
+    <string name="id_password_dialog">사원번호와 비밀번호를 확인하여 주십시오.\n(전자결재 비밀번호를 입력하시기 바랍니다.)\n\n※ 문의 : 모바일오피스 유지관리(070-4355-5382)</string>
+    <string name="login_by_fingerprint">지문으로 로그인 해주세요.</string>
+    <!--<string name="qna">비밀번호를 3회 잘못 입력시에는 계정이 잠기므로, \n☎ 070-4355-5382로 연락주시기 바랍니다.</string>-->
+    <string name="qna">사원번호와 비밀번호를 확인하여 주십시오.\n(전자결재 비밀번호를 입력하시기 바랍니다.)\n\n※ 문의 : 모바일오피스 유지관리(070-4355-5382)</string>
+    <string name="id_save"> 사원번호 저장</string>
+    <string name="login_save"> 자동 로그인</string>
+    <string name="warning"> 경고</string>
+    <string name="savePwd">비밀번호 저장</string>
+    <string name="showPwd">비밀번호 보기</string>
+    <string name="try_again">다시 시도해 주십시오.</string>
+
+
+    <string name="alert">알림</string>
+    <string name="disconnect_vpn">vpn 접속이 종료되었습니다. vpn접속 후 사용 해주시기 바랍니다.</string>
+    <string name="installsslvpn">VPN 업무망 접속을 위해 vpn-service 앱을 설치합니다.</string>
+    <string name="ssmConnFailed">SSM 바인딩에 실패했습니다.\nSSM앱 설치/인증 여부를 확인해 주시기 바랍니다.</string>
+    <string name="ssmFailed">SSM 메소드 연결에 실패했습니다.\n잠시 후 다시 접속해 주시기 바랍니다.</string>
+    <string name="ssmExecuteFailed">SSM 메소드 실행에 실패했습니다.\n잠시 후 다시 접속해 주시기 바랍니다.</string>
+    <string name="ssmUnRegistered">SSM 미인증 상태입니다.\nSSM 앱을 실행해 인증 후 다시 접속해 주시기 바랍니다.</string>
+    <string name="ssmNotInstalled">SSM 설치가 마무리되지 않았습니다. \nSSM 앱을 실해해 설치해주시기 바랍니다.</string>
+    <string name="ssmUnInstalled">SSM 설치마법사를 통해 SSM 앱 설치 및 인증  후 접속해 주시기 바랍니다.</string>
+    <string name="ssmOldVersion">SSM 앱 업데이트가 필요합니다.\n업데이트 및 인증 후  접속해 주시기 바랍니다.</string>
+    <string name="ssmNoPermission">권한이 없습니다.</string>
+    <string name="ssmInstallerExecute">SSM 설치마법사 실행</string>
+
+
+    <string name="V3ConnFailed">V3 바인딩에 실패했습니다.\nSSM앱 설치/인증 여부를 확인해 주시기 바랍니다.</string>
+
+    <string name="V3ExecuteFailed">V3 메소드 실행에 실패했습니다.\n잠시 후 다시 접속해 주시기 바랍니다.</string>
+    <string name="V3UnRegistered">V3 미인증 상태입니다.\nSSM 앱을 실행해 인증 후 다시 접속해 주시기 바랍니다.</string>
+    <string name="V3NotInstalled">V3 설치가 마무리되지 않았습니다. \nSSM 앱을 실해해 설치해주시기 바랍니다.</string>
+
+    <string name="V3OldVersion">V3 앱 업데이트가 필요합니다.\n업데이트 및 인증 후  접속해 주시기 바랍니다.</string>
+    <string name="V3NoPermission">권한이 없습니다.</string>
+    <string name="V3InstallerExecute">V3 설치마법사 실행</string>
+
+
+    <string name="V3UnInstalled">V3 앱이 설치되지 않았습니다.\n설치 후 V3앱을 실행해 기기관리자로 등록 및 업데이트 후 사용하시기 바랍니다.</string>
+    <string name="V3Failed">V3 인증에 실패했습니다.\nV3앱을 실행해 기기관리자로 등록 및 업데이트 후 사용하시기 바랍니다.</string>
+    <string name="V3">V3</string>
+    <string name="rooted">루팅된 단말에서는 모바일 오피스를 사용할 수 없습니다.</string>
+
+    <string name="dup_login">업무망 중복접속</string>
+    <string name="binding">업무망 접속 준비중입니다.</string>
+    <string name="connecting">업무망 접속 처리중입니다. \n접속 시 인터넷 허용이 차단 됩니다.</string>
+    <string name="userauth">사용자 자동인증 처리중입니다.</string>
+    <string name="user_vac">휴가로 인해 계정이 잠긴 상태입니다. 노무후생팀에서 잠긴계정을 해제 후 사용해 주세요.</string>
+    <string name="user_pwd_locked">비밀번호 횟수 초과 등으로 계정 잠김 상태입니다. 해제 후 사용하시기 바랍니다.(070-4355-5382)</string>     <!--result : 7005-->
+    <string name="user_vac_locked">ID 또는 비밀번호가 잘못 입력되었습니다.(sso비밀번호:40008)</string> <!--result: 7005-->
+    <string name="unvalid_password">ID 또는 비밀번호가 잘못 입력되었습니다. 비밀번호 확인 후 다시 접속하여 주십시오.</string> <!--result: 7005-->
+    <string name="user_sso_failed">SSO 사용자 인증에 실패했습니다.</string>
+    <string name="not_join_us">가입되지 않은 사용자 입니다.</string>            <!-- 7002 -->
+    <string name="join_us">모바일 사이트(mg.ex.co.kr)에서 가입 후 사용해 주세요.\n확인버튼을 누르면 가입 페이지로 이동합니다.</string>
+
+    <string name="unable_finger">지문인증 기능이 불가능한 휴대폰입니다.</string>
+    <string name="set_lock_screen">화면 잠금 설정 후 사용해 주세요.</string>
+    <string name="set_fingerprint">지문을 등록 후 사용해 주세요.</string>
+    <string name="inform_fingerprint">휴대폰의 환경설정-잠금화면 및 보안-지문에서 지문을 등록 후 로그인 시 사용할 수 있습니다.</string>
+    <string name="inform_login">최초 1회 비밀번호 접속 후 지문 로그인을 사용할 수 있습니다.</string>
+    <string name="way_to_login">로그인 방식</string>
+    <string name="finger_login">지문인식 로그인</string>
+    <string name="password_login">비밀번호 로그인</string>
+
+    <string-array name="login">
+        <item>사원번호/비밀번호</item>
+        <item>지문인증</item>
+    </string-array>
+
+    <string name="use_fingerprint_to_authenticate_key">use_fingerprint_to_authenticate_key</string>
+    <string name="use_fingerprint_in_future">Use fingerprint in the future</string>
+    <string name="use_password">취소</string>
+    <string name="fingerprint_not_recognized">지문이 일치하지 않습니다.\n다시 시도해 주시기 바랍니다.</string>
+    <string name="fingerprint_success">인증완료.</string>
+    <string name="fingerprint_hint">지문을 사용해 인증해 주세요.</string>
+    <string name="fingerprint_description">지문인증</string>
+    <string name="description_fingerprint_icon">Fingerprint icon</string>
+    <string name="failed_to_encrypt">데이터 암호화 실패\n다시 시도해 주세요.</string>
+
+    <!-- 	hi-단말인증 -->
+    <string name="dialog_wait">잠시만 기다려 주세요.</string>
+    <string name="dialog_ok">확인</string>
+    <string name="success">정상적으로 등록 되었습니다.\nSSM 앱을 실행해 인증 후 사용하시기 바랍니다.</string>
+    <string name="hi_failed">단말인증 실패</string>
+    <string name="error_003">등록되지 않은 휴대폰 번호 입니다.\n업무용 단말일 경우\n모바일 앱 통합 유지관리팀 으로 문의 하시기 바랍니다.\n☎ 070-4355-5382</string>
+    <string name="error_004">이미 등록된 사용자 입니다.\nSSM 앱을 실행해 인증 후 사용하시기 바랍니다.</string>
+    <string name="error_005">단말등록에 실패했습니다.\n모바일 앱 통합 유지관리팀으로 문의하시기 바랍니다.\n☎ 070-4355-5382</string>
+    <string name="check_network">네트워크 연결 상태를 확인해 주시기 바랍니다.\n(Wi-Fi 또는 모바일 데이터 네트워크)</string>
+
+
+    <!--  hi-스토어 -->
+    <string name="histore_appname">hi-스토어</string>
+    <string name="more">더 보기</string>
+    <string name="no_list_text">필수 어플리케이션 설치 확인</string>
+    <string name="installed">설치됨</string>
+    <string name="save">등록</string>
+    <string name="app_image">App Image</string>
+    <string name="install">설치</string>
+    <string name="reinstall">재설치</string>
+    <string name="update">업데이트</string>
+    <string name="summary">App 개요</string>
+    <string name="no_data_new">어플리케이션이 없습니다.</string>
+    <string name="download">다운로드</string>
+    <string name="category_core">필수 설치 App</string>
+    <string name="no_checked">설치할 App을 선택하세요.</string>
+    <string name="menu_reply_write">리뷰작성</string>
+    <string name="fmt_ver">ver @@</string>
+    <string name="fmt_download">_@@ 회</string>
+    <string name="fmt_size">_@@ MB</string>
+    <string name="fmt_reply_cnt">리뷰 (@@)</string>
+    <string name="fmt_reply_auther">_@@ |</string>
+    <string name="msg_reply_none">등록된 리뷰가 없습니다.</string>
+    <string name="activity_detail">상세보기</string>
+    <string name="delete">삭제</string>
+    <string name="msg_reply_delete_prompt">리뷰가 삭제됩니다.</string>
+    <string name="no_data">해당 어플리케이션이 없습니다.</string>
+    <string name="activity_option">관계사 App 둘러보기</string>
+    <string name="status_wait">대기 중</string>
+    <string name="status_download_error">다운로드 실패</string>
+    <string name="status_download">다운로드 완료</string>
+    <string name="msg_download">_@@ 다운로드가 완료되었습니다.</string>
+    <string name="msg_download_error">_@@ 다운로드가 실패하였습니다.</string>
+    <string name="progress_installing">설치중입니다.</string>
+    <string name="progress_downloading">Downloading...</string>
+    <string name="msg_done">설치가 완료되었습니다.</string>
+    <string name="msg_failed_3">스토어를 통해서 다시 설치하여 주시기 바랍니다.</string>
+    <string name="msg_failed_2">_@@ 건이 설치되지 않았습니다.\n( @@ )\n</string>
+    <string name="msg_failed_1">_@@ 건이 다운로드가 실패하였습니다\n( @@ )\n</string>
+    <string name="msg_install">( @@ / @@ )\n@@ 설치가 완료되었습니다.</string>
+    <string name="fmt_category">_@@ (@@개)</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

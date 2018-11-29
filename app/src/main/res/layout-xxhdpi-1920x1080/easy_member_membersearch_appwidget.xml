@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ALL"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="15px"
+    android:paddingRight="15px">
+    <ImageView
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center"
+    	android:scaleType="fitXY"
+    	android:src="@drawable/easy_member_memsearch_bg"/>
+    <ImageView
+    	android:id="@+id/TEXT_INPUT"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center_vertical"
+    	android:layout_marginTop="17px"
+    	android:layout_marginLeft="137px"
+    	android:layout_marginRight="20px"
+    	android:scaleType="fitXY"
+    	android:src="@drawable/easy_member_textfield"/>
+    <Button
+    	android:id="@+id/BUTTON_INPUT"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center_vertical|right"
+    	android:layout_marginTop="19px"
+    	android:layout_marginRight="22px"
+    	android:background="@drawable/easy_member_searchbtn_selector"/>
+</FrameLayout>

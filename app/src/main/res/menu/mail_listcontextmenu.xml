@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+   <item android:id="@+id/CMENUDELETE" android:title="@string/mail_LONG_MENU_DELETE"></item>
+  <item android:id="@+id/CMENUUNREAD" android:title="@string/mail_LONG_MENU_UNREAD"></item>
+  <item android:id="@+id/CMENUREAD" android:title="@string/mail_LONG_MENU_READ"></item>
+   <item android:id="@+id/CMENUREPLY" android:title="@string/mail_LONG_MENU_REPLY"></item>
+  <item android:id="@+id/CMENUREPLYALL" android:title="@string/mail_LONG_MENU_REPLYALL"></item>
+  <item android:id="@+id/CMENUFORWARD" android:title="@string/mail_LONG_MENU_FORWARD"></item>
+ 
+  
+</menu>

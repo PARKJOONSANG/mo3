@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical" >
+
+    <!-- 타이틀 -->
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/easy_common_ex_title" />
+    
+    <!-- 중간 타이틀 -->
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/easy_common_ex_middle" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ListView
+            android:id="@+id/do_approval_listview_approval"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#F5F5F5"
+            android:cacheColorHint="#00000000"
+            android:divider="#DDDDDD"
+        	android:dividerHeight="1dp" />
+
+        <TextView
+            android:id="@+id/do_approval_textview_nodata"
+            style="@style/easyaproavl_common_display_info"
+            android:text="결재항목이 존재하지 않습니다."
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

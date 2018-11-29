@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ex.group.folder.LoginActivity">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:elevation="2dp"
+        >
+        <include layout="@layout/activity_login_bg"
+            />
+        
+        <LinearLayout
+            android:elevation="2dp"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|top"
+            android:orientation="vertical"
+            android:weightSum="640">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="gone">
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/HardCodingf_ViewPager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"></android.support.v4.view.ViewPager>
+                <android.support.v4.widget.Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="     사원번호"
+                    android:background="@color/white"/>
+                <android.support.v4.widget.Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="      비밀번호"
+                    android:id="@+id/userPw"
+                    android:textColor="@color/black"
+                    android:inputType="textPassword"
+                    android:textSize="15sp"
+                    android:maxLines="1"
+
+                    android:background="@color/white"/>
+                <android.support.v4.widget.Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="hc_login"/>
+                    <android.support.v4.widget.Space
+                        android:layout_width="30dp"
+                        android:layout_height="15dp" />
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="hc_pwsave"/>
+                </LinearLayout>
+            </LinearLayout>  <!--연습 예제 위젯들 들어 있습니다.-->
+            <LinearLayout
+                android:background="#042244"
+                android:id="@+id/main_mobileoffice_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="46"
+                android:weightSum="360"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="136"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/title_mobileoffice"/>
+                />
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="594"
+                android:weightSum="594"
+                android:orientation="vertical"
+                android:gravity="top|center">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="36"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="360">
+
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/loginwayTabLayout"
+                        android:background="@drawable/login_tab_bg"
+                        app:tabIndicatorColor="#33ffffff"
+                        app:tabSelectedTextColor="@color/white"
+                        app:tabTextColor="#ffffff"
+                        android:layout_width="340dp"
+                        android:layout_height="match_parent"
+
+                        />
+                </RelativeLayout>
+
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/loginwayViewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="548"></android.support.v4.view.ViewPager>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+            />
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+
+
+</LinearLayout>

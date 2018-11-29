@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+<!--  <item android:id="@+id/MENUMAILBOX" android:title="메일함"></item>-->
+  <item android:id="@+id/MENUWRITE" android:title="편지쓰기"></item>
+  <item android:id="@+id/MENUSET" android:title="삭제"></item>
+  <item android:id="@+id/MENUREFRESH" android:title="업데이트"></item>
+<!--   <item android:id="@+id/MENU_SIGN_SETING" android:title="서명설정"></item>   -->
+
+
+</menu>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="easyaproval_colorPrimary">#3F51B5</color>
+    <color name="easyaproval_colorPrimaryDark">#303F9F</color>
+    <color name="easyaproval_colorAccent">#FF4081</color>
+    <color name="easyaproval_White">#FFFFFF</color>
+
+    <color name="easyaproval_Red">#FF0000</color>
+
+    <color name="easyaproval_Green">#00FF00</color>
+
+    <color name="easyaproval_Blue">#0000FF</color>
+
+    <color name="easyaproval_Blue_2">#0F66A3</color>
+
+    <color name="easyaproval_Grey">#808080</color>
+
+    <color name="easyaproval_Grey_1">#989898</color>
+
+    <color name="easyaproval_grey">#F7F7F7</color>
+
+    <color name="easyaproval_Black">#000000</color>
+
+    <color name="easyaproval_coral">#F5AF64</color>
+
+    <color name="easyaproval_Skyblue">#4B9DD5</color>
+
+    <color name="easyaproval_focused_color">#FFFFFFFF</color>
+
+    <color name="easyaproval_unfocused_color">#FF000000</color>
+
+    <color name="easyaproval_id_focused_color">#FFFFFFFF</color>
+
+    <color name="easyaproval_id_unfocused_color">#FFFF0000</color>
+
+    <color name="easyaproval_write_dim_color">#939393</color>
+
+    <color name="easyaproval_white">#FFFFFFFF</color>
+
+    <color name="easyaproval_black">#FF000000</color>
+
+    <color name="easyaproval_workflow_date">#FFC0C0C0</color>
+
+    <color name="easyaproval_workflow_desc1">#FFFC9A1E</color>
+
+    <color name="easyaproval_detailview_background">#FF5D5D5D</color>
+
+    <color name="easyaproval_cal_text_focused_color">#FFFF0000</color>
+
+    <color name="easyaproval_list_date_text">#1678A7</color>
+
+    <color name="easyaproval_list_title_text">#898989</color>
+
+    <color name="easyaproval_more_btn_text">#2B9DDF</color>
+
+    <color name="easyaproval_c717171">#717171</color>
+
+    <color name="easyaproval_disable_btn_text">#969ea4</color>
+
+    <color name="easyaproval_team_back">#F7F7F7</color>
+
+    <color name="easyaproval_team_select">#0000FF</color>
+
+    <color name="easyaproval_list_focused">#2B9DDF</color>
+
+    <color name="easyaproval_list_normal">#DAE7F1</color>
+</resources>

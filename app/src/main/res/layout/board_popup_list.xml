@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60px"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:paddingLeft="20px" >
+
+    <TextView
+        android:id="@+id/board_popup_txt01"
+        android:layout_width="wrap_content"
+        android:layout_height="60px"
+        android:layout_weight="3"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="#666666"
+        android:textSize="21px" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60px"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:src="@drawable/board_date_view_next_button_normal" />
+
+</LinearLayout>

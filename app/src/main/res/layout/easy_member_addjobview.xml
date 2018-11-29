@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/addjoblayout"
+  android:layout_width="fill_parent"
+  android:layout_height="98px"
+  android:orientation="vertical"
+  android:background="#FFFFFF">			
+	<View
+		android:layout_width="fill_parent"
+		android:layout_height="1px"
+		android:background="#DDDDDD" />
+	<LinearLayout
+		android:id="@+id/addlayout_dept"
+		android:layout_width="fill_parent"
+		android:layout_height="89px"
+		android:background="#DAE7F1"
+		android:orientation="vertical"
+		android:paddingRight="20px"
+		android:paddingLeft="20px"
+		android:paddingBottom="10px"
+		android:paddingTop="10px">
+		<TextView
+			style="@style/detail_team"
+			android:id="@+id/addcompany_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+		<TextView
+			style="@style/detail_dept"
+			android:id="@+id/addsuffix_dept"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</LinearLayout>			
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="mail_MAINNAME" >
+		<item>받은편지함</item>
+		<item>Speed Comm</item>
+		<item>개인폴더지정 1</item>
+		<item>개인폴더지정 2</item>
+		<item>임시저장함</item>
+		<item>보낸편지함</item>
+		<item>휴지통</item>
+	</string-array>
+</resources>

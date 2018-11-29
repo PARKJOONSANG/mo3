@@ -1,0 +1,34 @@
+<resources>
+    <dimen name="easyaproavl_width01">200dp</dimen>
+    <dimen name="easyaproavl_width02">90dp</dimen>
+    <dimen name="easyaproavl_width03">40dp</dimen>
+    <dimen name="easyaproavl_width04">60dp</dimen>
+    <dimen name="easyaproavl_width05">80dp</dimen>
+    <dimen name="easyaproavl_width06">20dp</dimen>
+    <dimen name="easyaproavl_width07">30dp</dimen>
+    <dimen name="easyaproavl_width08">50dp</dimen>
+    
+    <dimen name="easyaproavl_height01">30dp</dimen>
+    <dimen name="easyaproavl_height02">60dp</dimen>
+    <dimen name="easyaproavl_height03">40dp</dimen>
+    <dimen name="easyaproavl_height04">50dp</dimen>
+    <dimen name="easyaproavl_height05">18dp</dimen>
+    <dimen name="easyaproavl_height06">20dp</dimen>
+    <dimen name="easyaproavl_height07">80dp</dimen>
+    <dimen name="easyaproavl_height08">70dp</dimen>
+    <dimen name="easyaproavl_height09">150dp</dimen>
+    
+    <dimen name="easyaproavl_textSize01">18sp</dimen>
+    <dimen name="easyaproavl_textSize02">17sp</dimen>
+    <dimen name="easyaproavl_textSize03">16sp</dimen>
+    <dimen name="easyaproavl_textSize04">14sp</dimen>
+    <dimen name="easyaproavl_textSize05">20sp</dimen>
+    <dimen name="easyaproavl_textSize06">12sp</dimen>
+    
+    <dimen name="easyaproavl_space01">5dp</dimen>
+    <dimen name="easyaproavl_space02">25dp</dimen>
+    <dimen name="easyaproavl_space03">10dp</dimen>
+    <dimen name="easyaproavl_space04">2dp</dimen>
+    <dimen name="easyaproavl_space05">40dp</dimen>		<!-- 간이결재 하단 버튼 간격용 -->
+
+</resources>

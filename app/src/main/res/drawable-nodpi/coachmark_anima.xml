@@ -1,0 +1,8 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:drawable="@drawable/main_coachmark_character_giltong" android:duration="310"/>
+    <item android:drawable="@drawable/coachmark_click" android:duration="350"/>
+
+
+
+</animation-list>

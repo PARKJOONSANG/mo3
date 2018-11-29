@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="mail_member">
+		<item>강진우</item>
+		<item>윤석훈</item>
+		<item>이서현</item>
+		<item>김현정</item>
+		<item>최현영</item>
+		<item>우희영</item>
+		<item>김훈</item>
+		<item>이정권</item>
+		<item>최지영</item>
+		<item>송현정</item>
+		<item>오영표</item>
+		<item>하정훈</item>
+		<item>손호영</item>
+		<item>윤석훈</item>
+		<item>이서현</item>
+		<item>김현정</item>
+		<item>최현영</item>
+		<item>우희영</item>
+		<item>김훈</item>
+		<item>이정권</item>
+		<item>최지영</item>
+		<item>송현정</item>
+		<item>오영표</item>
+		<item>하정훈</item>
+		<item>손호영</item>
+	</string-array>
+	<string-array name="mail_dept">
+		<item>1106211</item>
+		<item>6548789</item>
+		<item>2343533</item>
+		<item>2342566</item>
+		<item>7567456</item>
+		<item>2346564</item>
+		<item>8675765</item>
+		<item>2345656</item>
+		<item>2342343</item>
+		<item>4453545</item>
+		<item>5675675</item>
+		<item>1234234</item>
+		<item>1111111</item>
+		<item>2343533</item>
+		<item>2342566</item>
+		<item>7567456</item>
+		<item>2346564</item>
+		<item>8675765</item>
+		<item>2345656</item>
+		<item>2342343</item>
+		<item>4453545</item>
+		<item>5675675</item>
+		<item>1234234</item>
+		<item>1111111</item>
+		<item>1111111</item>
+	</string-array>
+</resources>

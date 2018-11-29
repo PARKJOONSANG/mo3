@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#FFFFFF">
+	<LinearLayout
+		android:id="@+id/list_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:background="#FFFFFF">
+		
+		<LinearLayout
+			android:id="@+id/searchbg_view"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:gravity="center_vertical">
+			<include
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				layout="@layout/easy_member_org_header_layout"/>
+		</LinearLayout>
+		<!-- LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:background="@drawable/member_bg_team">
+			<TextView
+				android:layout_width="wrap_content"
+				android:textSize="14sp"
+				android:textColor="#2F4B5F"
+				android:layout_height="fill_parent"
+				android:gravity="center_vertical"
+				android:paddingLeft="10px" android:id="@+id/txt_team_name"/>
+		</LinearLayout-->	
+			
+			
+		<ListView
+			android:id="@+id/list"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_gravity="center"
+			android:background="@drawable/easy_member_bg_contents"
+			android:cacheColorHint="#FFFFFF"
+			android:divider="#D8D8D8"
+			android:dividerHeight="1px"/>
+	</LinearLayout>
+	<FrameLayout
+		android:id="@+id/last_layout" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="#FFFFFF"
+	    android:visibility="gone">
+		<ListView
+			android:id="@+id/last_view"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:background="@drawable/easy_member_bg_contents"
+			android:cacheColorHint="#FFFFFF"
+			android:divider="#D8D8D8"
+			android:dividerHeight="1px"/>
+		<TextView
+			android:id="@+id/notice_text"
+			android:text="@string/easyaproval_msg_noresult"
+			android:background="@drawable/easy_member_bg_contents"
+			android:textSize="22sp"
+			android:textColor="#898989"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:padding="20px"
+			android:gravity="center"
+			android:visibility="gone"/>
+    </FrameLayout>
+	<ListView
+		android:id="@+id/tree_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@drawable/easy_member_bg_contents"
+		android:cacheColorHint="#FFFFFF"
+		android:divider="#FFFFFF"
+		android:dividerHeight="0px"
+		android:visibility="gone"/>
+</FrameLayout>

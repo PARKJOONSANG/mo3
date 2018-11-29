@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="87px"
+  android:background="@drawable/mail_btn_more"
+  android:gravity="center">
+  <LinearLayout
+	  android:id="@+id/moreview"
+	  android:layout_width="match_parent"
+	  android:layout_height="wrap_content"
+	  android:background="@drawable/mail_btn_more"
+	  android:gravity="center">
+		  <ImageView
+		  	android:id="@+id/moreicon"
+		  	android:src="@drawable/mail_icon_more"
+		  	android:layout_width="62px"
+			android:layout_height="62px"
+			android:layout_marginRight="12px"/>
+		  <TextView
+			android:id="@+id/moreButton"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:gravity="center"
+			android:textSize="32px"
+			android:textColor="#797979"
+			android:text="@string/mail_MORE_TEXT_1"/>
+	</LinearLayout>	
+</LinearLayout>

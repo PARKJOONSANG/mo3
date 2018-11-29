@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+    <ScrollView
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:visibility="gone"
+    	>
+    	<LinearLayout
+		    android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    >
+			<EditText 
+				android:id="@+id/text1"
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content"
+			    android:hint="Argument 1"
+				/>
+			<EditText
+				android:id="@+id/text2"
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content"
+			    android:hint="Argument 2"
+				/>
+			<EditText 
+				android:id="@+id/text3"
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content"
+			    android:hint="Argument 3"
+				/>
+			<EditText 
+				android:id="@+id/text4"
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content"
+			    android:hint="Argument 4"
+				/>
+			<EditText 
+				android:id="@+id/text5"
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content"
+			    android:hint="Argument 5"
+				/>
+		</LinearLayout>
+    </ScrollView>
+    <ScrollView
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	>
+		<LinearLayout
+		    android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    >
+			<Button 
+				android:id="@+id/button1"
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content"
+			    android:text="문서 건수 조회"
+				/>
+			<Button
+				android:id="@+id/button2"
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content"
+			    android:text="결재할문서/진행문서/완료문서리스트조회"
+				/>
+			<Button 
+				android:id="@+id/button3"
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content"
+			    android:text="결재선/현황 리스트"
+				/>
+			<Button 
+				android:id="@+id/button4"
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content"
+			    android:text="결재 문서 상세 조회"
+				/>
+			<Button 
+				android:id="@+id/button5"
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content"
+			    android:text="외출신청 시 입력폼 정보조회"
+				/>
+			<Button 
+				android:id="@+id/button6"
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content"
+			    android:text="문서 첨부이미지 보기"
+			    android:visibility="gone"
+				/>
+			<Button 
+				android:id="@+id/button7"
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content"
+			    android:text="문서결재승인/반려/회수하기"
+				/>
+			<Button
+				android:id="@+id/button8" 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" 
+				android:text="결재의견 리스트 조회"
+				/>
+			<Button 
+				android:id="@+id/button9"
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content"
+			    android:text="간이기안외출/휴가신청"
+				/>
+			<Button 
+				android:id="@+id/button10"
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content"
+			    android:text="휴가종류코드 리스트 조회"
+				/>
+			<Button 
+				android:id="@+id/button11"
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content"
+			    android:text="개인결제라인 리스트 조회"
+				/>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<resources>
+    <dimen name="board_width01">300dp</dimen>
+    <dimen name="board_width02">140dp</dimen>
+    <dimen name="board_width03">75dp</dimen>
+    <dimen name="board_width04">100dp</dimen>
+    <dimen name="board_width05">132dp</dimen>
+    <dimen name="board_width06">35dp</dimen>
+    <dimen name="board_width07">150dp</dimen>
+    <dimen name="board_width08">45dp</dimen>
+    <dimen name="board_width09">375dp</dimen>
+    
+    <dimen name="board_height01">60dp</dimen>
+    <dimen name="board_height02">100dp</dimen>
+    <dimen name="board_height03">75dp</dimen>
+    <dimen name="board_height04">85dp</dimen>
+    <dimen name="board_height05">30dp</dimen>
+    <dimen name="board_height06">35dp</dimen>
+    <dimen name="board_height07">132dp</dimen>
+    <dimen name="board_height08">110dp</dimen>
+    <dimen name="board_height09">220dp</dimen>
+    <dimen name="board_height10">450dp</dimen>
+    
+    <dimen name="board_textSize01">24sp</dimen>
+    <dimen name="board_textSize02">22sp</dimen>
+    <dimen name="board_textSize03">20sp</dimen>
+    <dimen name="board_textSize04">18sp</dimen>
+    <dimen name="board_textSize05">28sp</dimen>
+    <dimen name="board_textSize06">16sp</dimen>
+    
+    <dimen name="board_space01">10dp</dimen>
+    <dimen name="board_space02">60dp</dimen>
+    <dimen name="board_space03">17dp</dimen>
+    <dimen name="board_space04">3dp</dimen>
+    <dimen name="board_space05">50dp</dimen>		<!-- 간이결재 하단 버튼 간격용 -->
+
+</resources>

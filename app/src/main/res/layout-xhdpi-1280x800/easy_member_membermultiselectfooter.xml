@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="54px"
+	android:background="#A4A4A6" >
+	<RelativeLayout
+		android:layout_weight="1"
+		android:layout_width="fill_parent"
+		android:layout_height="54px" >
+		<Button
+			android:id="@+id/ROW_EMPLOYEE_SMS"
+			android:layout_width="150px"
+			android:layout_height="41px"
+			android:layout_centerInParent = "true"
+			android:background="@drawable/easy_member_member_multi_select_button" />
+		<ImageView
+			android:id="@+id/imgSMS"
+			android:layout_width="41px" 
+			android:layout_height="32px"
+			android:layout_centerInParent = "true"
+			android:src="@drawable/easy_member_multicheck_smsicon_no" />
+	</RelativeLayout>
+	<RelativeLayout
+		android:layout_weight="1"
+		android:layout_width="fill_parent"
+		android:layout_height="54px" >
+		<Button
+			android:id="@+id/ROW_EMPLOYEE_EMAIL"
+			android:layout_width="150px"
+			android:layout_height="41px"
+			android:layout_centerInParent = "true"
+			android:background="@drawable/easy_member_member_multi_select_button" />
+		<ImageView
+			android:id="@+id/imgEmail"
+			android:layout_width="41px" 
+			android:layout_height="32px"
+			android:layout_centerInParent = "true"
+			android:src="@drawable/easy_member_multicheck_sendicon_no" />
+	</RelativeLayout>
+</LinearLayout>

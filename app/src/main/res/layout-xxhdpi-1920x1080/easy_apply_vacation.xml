@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.ex.group.approval.simple"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5F5F5"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+    
+    <!-- 타이틀 -->
+    <include
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	layout="@layout/easy_common_ex_title" />
+
+     <!-- 중간 타이틀 -->
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/easy_common_ex_middle" />
+
+    <!-- 구분선 -->
+    <LinearLayout style="@style/easyproval_divide_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- 하단 버튼 영역 -->
+         <LinearLayout
+            android:id="@+id/apply_vacation_layout_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#F5F5F5"
+            android:orientation="vertical"
+            >
+            
+            <!-- 구분선 -->
+    		<LinearLayout style="@style/easyproval_divide_line" />
+    		
+    		<LinearLayout
+    		    android:layout_width="match_parent"
+    		    android:layout_height="@dimen/easyaproavl_height02"
+    		    android:orientation="horizontal"
+    		    android:gravity="center|right"
+    		    android:padding="@dimen/easyaproavl_space01"
+    		    >
+	            <Button
+	                android:id="@+id/apply_vacation_button_ok"
+	                android:layout_width="@dimen/easyaproavl_width07"
+	                android:layout_height="@dimen/easyaproavl_height03"
+	                android:background="@drawable/easy_btn_input"
+	                />
+	
+	            <Button
+	                android:id="@+id/apply_vacation_button_cancel"
+	                android:layout_width="@dimen/easyaproavl_width07"
+	                android:layout_height="@dimen/easyaproavl_height03"
+	                android:background="@drawable/easy_btn_cancel"
+	                android:layout_marginLeft="@dimen/easyaproavl_space05"
+	                />
+	            </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/apply_vacation_layout_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/apply_vacation_layout_toolbar"
+            android:layout_alignParentTop="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- 신청일 -->
+                <LinearLayout style="@style/easyaproavl_people_layout">
+                    <TextView
+                        style="@style/easyproval_apply_left_title_name_field"
+                        android:text="신  청  일" />
+
+                    <Button
+                        android:id="@+id/apply_vacation_button_targetdate"
+                        style="@style/easyproval_button_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2011년8월19일(금)" />
+                </LinearLayout>
+
+                <!-- 구분선 -->
+                <LinearLayout style="@style/easyproval_divide_line" />
+
+                <!-- 근태종류 -->
+                <LinearLayout style="@style/easyaproavl_people_layout" >
+                    <TextView
+                        style="@style/easyproval_apply_left_title_name_field"
+                        android:layout_gravity="center_vertical"
+                        android:text="근태종류" />
+                    
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/easyaproavl_space04"
+                        android:paddingTop="@dimen/easyaproavl_space04" >
+
+                        <Button
+                            android:id="@+id/apply_vacation_button_guntae"
+                            style="@style/easyproval_button_text"
+                            android:layout_width="match_parent"
+                        	android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:text="병가" />
+
+	                    <LinearLayout
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:gravity="center_vertical"
+	                        android:orientation="horizontal"
+	                        android:paddingTop="@dimen/easyaproavl_space04" >
+	
+	                        <TextView
+	                            android:layout_width="match_parent"
+	                            android:layout_height="wrap_content"
+	                            android:text="* 한도일수 : "
+	                            android:textColor="#666666"
+	                            android:textSize="@dimen/easyaproavl_textSize04" />
+	
+	                        <TextView
+	                            android:id="@+id/apply_vacation_textview_term"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="wrap_content"
+	                            android:text="0"
+	                            android:textColor="#2273AA"
+	                            android:textSize="@dimen/easyaproavl_textSize04" />
+	
+	                        <TextView
+	                            android:layout_width="match_parent"
+	                            android:layout_height="wrap_content"
+	                            android:text="일"
+	                            android:textColor="#666666"
+	                            android:textSize="@dimen/easyaproavl_textSize04" />
+	                    </LinearLayout>
+	            	</LinearLayout>
+                </LinearLayout>
+
+                <!-- 구분선 -->
+                <LinearLayout style="@style/easyproval_divide_line" />
+
+                <!-- 시작일 -->
+                <LinearLayout style="@style/easyaproavl_people_layout" >
+                    <TextView
+                        style="@style/easyproval_apply_left_title_name_field"
+                        android:text="시  작  일" />
+
+                    <Button
+                        android:id="@+id/apply_vacation_button_fromdate"
+                        style="@style/easyproval_button_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2011년08월19일(금)" />
+                </LinearLayout>
+                
+                <!-- 구분선 -->
+                <LinearLayout style="@style/easyproval_divide_line" />
+
+                <!-- 종료일 -->
+                <LinearLayout style="@style/easyaproavl_people_layout" >
+                    <TextView
+                        style="@style/easyproval_apply_left_title_name_field"
+                        android:text="종  료  일" />
+
+                    <Button
+                        android:id="@+id/apply_vacation_button_untildate"
+                        style="@style/easyproval_button_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2011년08월19일(금)" />
+                </LinearLayout>
+                
+                <!-- 구분선 -->
+                <LinearLayout style="@style/easyproval_divide_line" />
+
+                <!-- 제외일 -->
+                <LinearLayout style="@style/easyaproavl_people_layout" >
+                    <TextView
+                        style="@style/easyproval_apply_left_title_name_field"
+                        android:layout_gravity="center_vertical"
+                        android:text="제  외  일" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/easyaproavl_space04" >
+	                    
+                        <Button
+                            android:id="@+id/apply_vacation_button_exceptdate"
+                            style="@style/easyproval_button_text"
+                            android:layout_width="@dimen/easyaproavl_width02"
+                            android:layout_height="wrap_content"
+                            android:text="선택" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/easyaproavl_space04" >
+	                        
+	                        <TextView
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                            android:text="* 총 "
+	                            android:textColor="#666666"
+	                            android:textSize="@dimen/easyaproavl_textSize04" />
+	
+	                        <TextView
+	                            android:id="@+id/apply_vacation_textview_exceptdate1"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                            android:text="0"
+	                            android:textColor="#2273AA"
+	                            android:textSize="@dimen/easyaproavl_textSize04" />
+	
+	                        <TextView
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                            android:text="일중 "
+	                            android:textColor="#666666"
+	                            android:textSize="@dimen/easyaproavl_textSize04" />
+	
+	                        <TextView
+	                            android:id="@+id/apply_vacation_textview_exceptdate2"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                            android:text="0"
+	                            android:textColor="#2273AA"
+	                            android:textSize="@dimen/easyaproavl_textSize04" />
+	
+	                        <TextView
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="wrap_content"
+	                            android:text="일 제외"
+	                            android:textColor="#666666"
+	                            android:textSize="@dimen/easyaproavl_textSize04" />
+						</LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 구분선 -->
+                <LinearLayout style="@style/easyproval_divide_line" />
+                
+                <!-- 연락처 -->
+                <LinearLayout style="@style/easyaproavl_people_layout" >
+
+                    <TextView
+                        style="@style/easyproval_apply_left_title_name_field"
+                        android:text="연  락  처"/>
+
+                    <EditText
+                        android:id="@+id/apply_vacation_edittext_telnum"
+                        style="@style/easyaproval_editview_02"
+                        android:privateImeOptions="defaultInputmode=phone"
+                        />
+                </LinearLayout>
+                
+                <!-- 구분선 -->
+                <LinearLayout style="@style/easyproval_divide_line" />
+
+                <!-- 적요 -->
+                <LinearLayout style="@style/easyaproavl_people_layout" >
+
+                    <TextView
+                        style="@style/easyproval_apply_left_title_name_field"
+                        android:text="적       요" />
+
+                    <EditText
+                        android:id="@+id/apply_vacation_edittext_descript"
+                        style="@style/easyaproval_editview_02" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

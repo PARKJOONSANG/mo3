@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/listsearchresultview"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/mail_member_list_btn_back_selector"
+>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom = "20px"		
+	>
+		<ImageView
+			android:id="@+id/employee_line"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:scaleType="fitXY"
+			android:src="@drawable/mail_member_dot_tree_03"
+		/>
+		
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="0px"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_gravity="center"
+			android:paddingLeft="20px"
+			android:paddingTop = "20px"
+		>
+			<TextView
+				style="@style/mail_list_name"
+				android:id="@+id/ROW_EMPLOYEE_NAME"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"				
+				android:paddingRight="20px"
+				android:singleLine="true"
+				android:paddingBottom="11px"
+				android:textSize="17sp"
+			/>
+				
+			<TextView
+				style="@style/mail_list_team"
+				android:id="@+id/ROW_EMPLOYEE_TEAM"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:singleLine="true"
+				android:textColor="@color/mail_team_text_color"
+				android:paddingBottom="9px"
+			/>
+			
+			<TextView
+				style="@style/mail_list_tel"
+				android:id="@+id/ROW_EMPLOYEE_ROLE"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:singleLine="true"	
+				android:visibility = "gone"	
+			/>			
+		</LinearLayout>
+				
+		<ImageView
+			android:id="@+id/ROW_EMPLOYEE_SMS"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginLeft="7px"
+			android:src="@drawable/mail_member_btn_sms_selector"
+			android:clickable="true"/>
+		<ImageView
+			android:id="@+id/ROW_EMPLOYEE_PHONE"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginRight="10px"
+			android:layout_marginLeft="7px"
+			android:src="@drawable/mail_member_btn_mobile_selector"
+			android:clickable="true"/>
+	</LinearLayout>
+</LinearLayout>

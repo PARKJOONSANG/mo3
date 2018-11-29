@@ -1,0 +1,14 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:drawable="@drawable/app_icon_newsflash" android:duration="200"/>
+    <item android:drawable="@drawable/app_icon_board" android:duration="200"/>
+    <item android:drawable="@drawable/app_icon_assembly" android:duration="200"/>
+    <item android:drawable="@drawable/app_icon_exbus" android:duration="200"/>
+    <item android:drawable="@drawable/app_icon_newsflash" android:duration="200"/>
+    <item android:drawable="@drawable/app_icon_board" android:duration="200"/>
+    <item android:drawable="@drawable/app_icon_assembly" android:duration="200"/>
+    <item android:drawable="@drawable/app_icon_exbus" android:duration="200"/>
+    <item android:drawable="@drawable/app_icon_newsflash" android:duration="200"/>
+
+
+</animation-list>

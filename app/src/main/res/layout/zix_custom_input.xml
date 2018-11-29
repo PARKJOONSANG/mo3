@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/main"
+    android:orientation="vertical"
+android:background="@color/white"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent" >
+
+
+
+
+
+<LinearLayout
+    android:elevation="-1dp"
+
+    android:id="@+id/rl_dialog"
+    android:background="@color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="640"
+    android:layout_alignParentTop="true"
+    android:layout_centerInParent="true"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="@color/main_title_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="46"
+        android:orientation="horizontal"
+        android:weightSum="360"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/title_image"
+            android:src="@drawable/title_mobileoffice"
+            android:layout_above="@id/rl_dialog"
+            android:layout_width="0dp"
+            android:scaleType="fitCenter"
+            android:layout_height="match_parent"
+            android:layout_weight="120"/>
+    </LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="10"/>
+    <TextView
+        android:gravity="center|left"
+        android:id="@+id/zix_title"
+        android:textSize="16sp"
+        android:textColor="#dd052850"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="46"
+        android:background="@color/transparent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp" />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="10"/>
+    <LinearLayout
+        android:id="@+id/layout_password"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:weightSum="320"
+        android:background="@drawable/login_id_edit_box"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"/>
+        <ImageView
+            android:background="@color/transparent"
+            android:layout_width="0dp"
+            android:layout_weight="20"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_pw" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"/>
+
+        <EditText
+            android:id="@+id/zix_edit"
+            android:layout_width="0dp"
+            android:layout_weight="230"
+            android:layout_height="match_parent"
+            android:textColor="#222222"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:backgroundTint="@color/transparent"
+            android:background="@color/transparent"
+            android:textSize="26sp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30" />
+    <LinearLayout
+        android:background="@color/transparent"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+
+        android:layout_below="@id/layout_password"
+        android:orientation="horizontal"
+        android:weightSum="1.0"
+        android:gravity="center|right"
+        android:layout_centerInParent="true">
+        <Button
+            android:layout_weight="0.22"
+            android:id="@+id/zix_cancel"
+            android:background="@drawable/custom_dialog_negative_selector"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/zix_activity_cancel_desc"
+            android:textColor="#052850"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/zix_activity_cancel_button" />
+        <Space
+            android:layout_width="0dp"
+            android:background="@color/transparent"
+            android:layout_height="0dp"
+            android:layout_weight="0.01"/>
+        <Button
+            android:id="@+id/zix_done"
+            android:background="@drawable/custom_dialog_positive_selector"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/zix_activity_done_desc"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/zix_activity_done_button" />
+
+        <Space
+            android:layout_width="0dp"
+            android:background="@color/transparent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"/>
+    </LinearLayout>
+    <ImageView
+        android:src="@drawable/login_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="238"
+        />
+</LinearLayout>
+
+
+<LinearLayout
+    android:elevation="1dp"
+    android:id="@+id/mother_keyboard"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp">
+    <RelativeLayout
+        android:id="@+id/zix_keypad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical" />
+
+</LinearLayout>
+</RelativeLayout>

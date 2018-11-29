@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  
+<!--  <item android:id="@+id/MENUSHOWCC" android:title="@string/MENU_CC_BCC"></item>-->
+  <item android:id="@+id/MENUWSENDMAIL" android:title="@string/mail_SEND_BTN_TEXT"></item>
+  <item android:id="@+id/MENUSENDMAILCC" android:title="@string/mail_cancel_button"></item>
+<!--  <item android:id="@+id/MENU_SIGN_SETING" android:title="서명설정"></item>-->
+</menu>

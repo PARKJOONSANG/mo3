@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MemberSearch"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="66dp" >
+
+    <LinearLayout
+        android:id="@+id/searchbg_view"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#ECECEC"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/edidtext_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center" >
+
+            <EditText
+                android:id="@+id/MSMainSearchInputText"
+                style="@style/edittext"
+                android:layout_width="0px"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:hint="@string/easyaproval_search_hint"
+                android:imeOptions="actionSearch"
+                android:keepScreenOn="true"
+                android:singleLine="true" />
+            <!-- android:background="@drawable/member_input" -->
+
+            <ImageView
+                android:id="@+id/MSMainSearchSearchButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/easy_member_searchbtn_selector"
+                android:clickable="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/mail_folder_up"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/easy_member_org_header_layout" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/easy_member_bg_team"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/txt_team_name"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10px"
+            android:textColor="#2F4B5F"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="@drawable/easy_member_bg_contents" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ExpandableListView
+                android:id="@+id/MSMainList"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/easy_member_bg_contents"
+                android:divider="#DDDDDD"
+                android:dividerHeight="1dp"
+                android:scrollingCache="false" />
+
+            <LinearLayout
+                android:id="@+id/index_list"
+                android:layout_width="40px"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:orientation="vertical"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/MSMainNotice"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/easy_member_bg_contents" >
+
+            <ImageView
+                android:id="@+id/notice_icon"
+                android:layout_width="32px"
+                android:layout_height="29px"
+                android:layout_gravity="center"
+                android:layout_marginTop="-70px" />
+
+            <TextView
+                android:id="@+id/notice_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20px"
+                android:text="@string/easyaproval_msg_noresult"
+                android:textColor="#898989"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/notice_text2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="20px"
+                android:text="@string/easyaproval_msg_noresult"
+                android:textColor="#898989"
+                android:textSize="18sp" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="90px"
+            layout="@layout/easy_member_multiselect_footer" />
+    </LinearLayout>
+
+</LinearLayout>

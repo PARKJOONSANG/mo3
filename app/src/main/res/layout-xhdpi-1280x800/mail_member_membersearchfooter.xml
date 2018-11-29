@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/MORE_BUTTON"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<View
+		android:layout_width="fill_parent"
+		android:layout_height="1px"
+		android:background="#DDDDDD"/>
+	<TextView
+		android:id="@+id/txt_footer"
+		android:layout_width="fill_parent"
+		android:layout_height="116px"
+		android:gravity="center"
+		android:textSize="18sp"
+		android:textColor="@color/mail_more_btn_text_color_selector"
+		android:layout_gravity="center"
+		android:drawableLeft="@drawable/mail_member_btn_footer_selector"
+		android:text="@string/mail_label_footer"
+		android:paddingLeft="120px"
+		android:paddingRight="120px"
+		android:background="@drawable/mail_member_list_btn_back_selector"
+		android:duplicateParentState="true" />
+</LinearLayout>
+ 

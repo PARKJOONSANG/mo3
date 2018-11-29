@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="640"
+        tools:openDrawer="end"
+        android:orientation="vertical">
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="46">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:background="#042244"
+                    android:id="@+id/main_mobileoffice_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="360">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"/>
+                    <android.support.v4.widget.Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="106"/>
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="136"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/title_mobileoffice"/>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="66"></LinearLayout>
+                    <ImageView
+                        android:id="@+id/button_setting"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="36"
+                        android:scaleType="fitEnd"
+                        android:src="@drawable/btn_icon_settings"/>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"/>
+
+                </LinearLayout>
+
+            </android.support.design.widget.AppBarLayout>
+        </android.support.design.widget.CoordinatorLayout>
+
+
+        <android.support.v4.widget.DrawerLayout
+            android:id="@+id/drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="594"
+            android:fitsSystemWindows="true"
+            tools:openDrawer="end">
+            <LinearLayout
+                android:id="@+id/linearLayout_content_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="590">
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp">
+                    <LinearLayout
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="336">
+                        <TextView
+                            android:id="@+id/main_textview_user_welcome"
+                            android:textSize="14sp"
+                            android:text="홍길동님 어서오세요."
+                            android:gravity="center|left"
+                            android:layout_width="0dp"
+                            android:layout_weight="348"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="336"
+                        android:gravity="center|right"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="match_parent"
+
+                            android:src="@drawable/icon_calendar"
+                            android:scaleType="fitCenter"/>
+                        <android.support.v4.widget.Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"/>
+                        <TextView
+                            android:id="@+id/main_textview_date"
+                            android:gravity="right|center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0"
+                            android:textSize="12sp"
+                            android:text="2018.10.25.목요일"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <include layout="@layout/activity_main_contents2" />
+            </LinearLayout>
+
+
+
+            <android.support.design.widget.NavigationView
+                android:id="@+id/nav_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:fitsSystemWindows="true"
+                app:headerLayout="@layout/nav_header_main"
+                app:menu="@menu/activity_main_drawer"
+                app:itemTextColor="#222222"
+                app:itemIconTint="#3399ff"
+                android:clickable="true"/>
+
+        </android.support.v4.widget.DrawerLayout>
+
+
+    </LinearLayout>
+
+
+
+    <!--    CoachMark 레이아웃    -->
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/coachmark_layout"
+        android:elevation="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:weightSum="640">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="568"
+            android:background="#cc000000"
+            android:gravity="top"
+            android:orientation="vertical"
+            android:weightSum="568">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="46"
+                android:gravity="right|center">
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/coachmark_skip"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/main_coachmark_btn_skip" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/coachmark_icon_close"
+                    android:background="@color/white"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="20dp"
+                    android:scaleType="fitCenter"
+                    android:padding="2dp"
+                    android:src="@drawable/main_coachmark_finish"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="522"
+                android:orientation="vertical"
+                android:weightSum="522">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="22" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="320">
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/coachmark_icon"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/main_coachmark_circle"
+                        android:clickable="true"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="104dp"
+                            android:layout_height="104dp"
+                            android:background="@color/transparent"
+                            android:orientation="vertical">
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp">
+                                <LinearLayout
+                                    android:layout_centerInParent="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="8dp">
+                                    </LinearLayout>
+                                    <ImageView
+                                        android:clickable="true"
+                                        android:id="@+id/appicon"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="62dp"
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/app_icon_board"
+                                        />
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:id="@+id/click"
+                                    android:layout_centerInParent="true"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:weightSum="90">
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="50"/>
+                                    <LinearLayout
+                                        android:id="@+id/appicon_state_vpn_layout"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:weightSum="60"
+                                        android:orientation="vertical"
+                                        android:layout_weight="20">
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="5"/>
+                                        <ImageView
+                                            android:id="@+id/appicon_state_vpn"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="17"
+                                            android:src="@drawable/main_icon_app_vpn"/>
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:weightSum="84">
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="42"/>
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="42"
+                                        android:weightSum="60"
+                                        android:orientation="vertical">
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="34"/>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="14"
+                                            android:weightSum="42"
+                                            android:orientation="horizontal">
+                                            <View
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="2"/>
+                                            <RelativeLayout
+                                                android:id="@+id/unreadbox"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent"
+                                                >
+
+                                                <TextView
+                                                    android:visibility="visible"
+                                                    android:id="@+id/appicon_count"
+                                                    android:paddingLeft="4dp"
+                                                    android:paddingRight="4dp"
+                                                    android:background="@drawable/main_app_count_circle"
+                                                    android:gravity="center"
+                                                    android:textStyle="bold"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="match_parent"
+                                                    android:textSize="9sp"
+                                                    android:textColor="#ffffff"
+                                                    android:text="2"/>
+                                            </RelativeLayout>
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </RelativeLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="6dp"/>
+                            <TextView
+                                android:id="@+id/main_app_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="18dp"
+                                android:gravity="center|top"
+                                android:textStyle="bold"
+                                android:textSize="14sp"
+                                android:textColor="#222222"
+                                android:text="게시판"
+                                />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="9.99dp"/>
+
+
+
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/coachmark_icon_anima"
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="32dp"
+                        />
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/coachmark_icon_explain"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="80dp"
+
+                        android:scaleType="fitStart"
+                        android:src="@drawable/main_coachmark_icon_explain" />
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="180">
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:id="@+id/coachmark_middle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="140dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="19dp"
+                            android:src="@drawable/main_coachmark_alram" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+
+                            android:src="@drawable/main_coachmark_character_giltong" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/coachmark_bottomm"
+            android:background="#cc000000"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="72"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="360">
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

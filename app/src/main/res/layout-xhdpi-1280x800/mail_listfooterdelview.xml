@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  	<LinearLayout
+  		android:id="@+id/del_button"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/mail_search_bg">
+		<Button
+			android:id="@+id/ALLDel"
+			android:layout_width="380px"
+			android:layout_height="102px"
+			android:layout_marginTop="6px"
+			android:layout_marginLeft="10px"
+	  		android:layout_marginBottom="11px"
+			android:text="전체삭제"
+			android:textSize="28sp"
+			android:textColor="@drawable/mail_popup_button_text_selector"
+			android:background="@drawable/mail_btn_option_selector" />
+		<Button
+			android:id="@+id/Del"
+			android:layout_width="380px"
+			android:layout_height="102px"
+			android:layout_marginTop="6px"
+			android:layout_marginLeft="20px"
+	  		android:layout_marginRight="10px"
+	  		android:layout_marginBottom="11px"
+			android:text="삭제하기"
+			android:textSize="28sp"
+			android:textColor="@drawable/mail_popup_button_text_selector"
+			android:background="@drawable/mail_btn_option_selector" />
+	</LinearLayout>	
+</LinearLayout>

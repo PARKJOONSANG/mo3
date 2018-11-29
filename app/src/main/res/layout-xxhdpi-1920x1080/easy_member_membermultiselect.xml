@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:id="@+id/membermultiselect" 
+	android:orientation="vertical"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:background="#FFFFFF">
+	<include android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		layout="@layout/easy_member_title" />
+	<TextView
+		android:id="@+id/multiselecttitle_text" 
+		android:layout_width="fill_parent" 
+		android:layout_height="30dp"
+		android:gravity="left|center"
+		android:paddingLeft="12px"
+		android:text="@string/easyaproval_sendSMS"
+		android:textColor="#3B5672"
+		android:textSize="17sp"
+		android:background="@drawable/easy_member_bg_title_02"/>
+	<ListView 
+		android:id="@+id/MMSelectList" 
+		android:layout_width="fill_parent" 
+		android:layout_height="0px"
+		android:layout_weight="1"
+		android:background="@drawable/easy_member_bg_contents"
+		android:cacheColorHint="#FFFFFF"
+		android:divider="#D8D8D8"
+		android:dividerHeight="1px"/>
+	<include
+    	layout="@layout/easy_member_send_multiselect_footer"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"/>
+</LinearLayout>

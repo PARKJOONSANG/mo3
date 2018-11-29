@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "662973652511",
+    "firebase_url": "https://folder-faba3.firebaseio.com",
+    "project_id": "folder-faba3",
+    "storage_bucket": "folder-faba3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:662973652511:android:b442954a8e876dd3",
+        "android_client_info": {
+          "package_name": "com.ex.group.folder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "662973652511-oemdmsem44h22umv5u19k99qais94j8g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPOAzACQwNe1qt9pmnZPUPoTVM5ASHiic"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

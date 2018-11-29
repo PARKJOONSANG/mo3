@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/listsearchresultview"
+	android:layout_width="fill_parent"
+	android:layout_height="100px"
+	android:background="@drawable/easy_member_list_btn_back_selector"
+>
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="100px"
+		android:orientation="horizontal" >
+		<ImageView
+			android:id="@+id/employee_circle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center|center_vertical"
+			android:layout_marginLeft="20px"
+			android:layout_marginRight="20px"
+			android:scaleType="fitXY"  />
+		<ImageView
+			android:id="@+id/employee_line"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="5px"
+			android:layout_gravity="center|center_vertical"
+			android:scaleType="fitXY"  />
+		<TextView
+			android:id="@+id/ROW_EMPLOYEE_NAME"
+			android:singleLine="true"
+			android:layout_width="120px"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="28px"
+			android:layout_marginLeft="12px"
+			android:text="박성원"
+			android:textSize="30px"
+			android:textColor="#202020" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="0px"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:orientation="vertical"
+		android:paddingLeft="20px" >
+		<TextView
+			android:id="@+id/ROW_EMPLOYEE_TEAM"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="28px"
+			android:textSize="25px"
+			android:visibility="gone"
+			android:textColor="#333333"
+			android:singleLine="true"  />
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"	
+			android:orientation="vertical" >
+		<!-- 회사명을 넣을 공간. -->
+			<TextView
+				android:id="@+id/ROW_EMPLOYEE_CORP"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="25px"
+				android:gravity="center"
+				android:layout_gravity="center_vertical"							
+				android:textSize="25px"
+				android:textColor="#5a5a5a" 
+				android:singleLine="true"/>
+			<TextView
+				android:id="@+id/ROW_EMPLOYEE_DEPT"					
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:layout_gravity="center_vertical"
+				android:layout_marginLeft="10px"
+				android:textSize="25px"
+				android:singleLine="true"
+				android:textColor="#5a5a5a" />
+		</LinearLayout>
+	</LinearLayout>
+			
+	<TextView
+		android:id="@+id/ROW_EMPLOYEE_CHECK"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_marginRight="10px"
+		android:layout_marginLeft="7px"
+		android:background="@drawable/easy_member_check_off"
+		/>
+</LinearLayout>

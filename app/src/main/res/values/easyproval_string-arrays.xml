@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name = "easyaproval_main_listview_itemtitle">
+		<item>결재하기</item>
+		<item>결재 상황보기</item>
+		<item>결재 완료함</item>
+		<item>결재 반려함</item>
+	</string-array>
+	
+	<string-array name = "easyaproval_common_approval_type">
+		<item>외출신청서</item>
+		<item>휴가신청서</item>
+	</string-array>
+	
+	<string-array name = "easyaproval_common_search_type">
+		<item>구성원 검색</item>
+		<item>조직도 검색</item>
+	</string-array>
+<!-- 		<item>그룹목록</item> -->
+	
+	<string-array name = "easyaproval_apply_outside_spinner_formcode_name">
+		<item>공무</item>
+		<item>사무</item>
+		<item>교육</item>
+		<item>육아</item>
+		<item>임신</item>
+	</string-array>
+	
+	<string-array name = "easyaproval_apply_outside_spinner_formcode_code">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+	</string-array>
+	
+	<string-array name = "easyaproval_apply_outside_spinner_formcode_name_without_child">
+		<item>공무</item>
+		<item>사무</item>
+		<item>교육</item>
+		<item>임신</item>
+	</string-array>
+	
+	<string-array name = "easyaproval_apply_outside_spinner_formcode_code_without_child">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>4</item>
+	</string-array>
+	
+	<string-array name = "easyaproval_apply_line_spinner_approval_kind_name_type0">
+		<item>기안</item>
+	</string-array>
+	
+	<string-array name = "easyaproval_apply_line_spinner_approval_kind_code_type0">
+	    <item>125</item>
+	</string-array>
+	
+	<string-array name = "easyaproval_apply_line_spinner_approval_kind_name_type1">
+		<item>결재</item>
+	</string-array>
+	
+	<string-array name = "easyaproval_apply_line_spinner_approval_kind_code_type1">
+	    <item>110</item>
+		<!-- <item>normal</item> -->
+	</string-array>
+	
+	<string-array name = "easyaproval_apply_line_spinner_approval_kind_name_type2">
+		<item>결재</item>
+		<item>전결</item>
+	</string-array>
+	
+	<string-array name = "easyaproval_apply_line_spinner_approval_kind_code_type2">
+	    <item>110</item>
+		<item>113</item>
+		<!-- <item>normal</item>
+		<item>authorized</item> -->
+	</string-array>
+	
+	<string-array name = "easyaproval_apply_line_spinner_approval_kind_name_type3">
+		<item>결재</item>
+		<item>전결</item>
+		<item>대결</item>
+	</string-array>
+	
+	<string-array name = "easyaproval_apply_line_spinner_approval_kind_code_type3">
+	    <item>110</item>
+		<item>113</item>
+		<item>114</item>
+		<!-- <item>normal</item>
+		<item>authorized</item>
+		<item>substituted</item> -->
+	</string-array>
+	
+	<string-array name = "easyaproval_apply_line_spinner_approval_kind_name_none">
+		<item>안함</item>
+	</string-array>
+	
+	<string-array name = "easyaproval_apply_line_spinner_approval_kind_code_none">
+		<item>none</item>
+	</string-array>
+</resources>

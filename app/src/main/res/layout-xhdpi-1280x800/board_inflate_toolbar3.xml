@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" 
+	android:layout_width="match_parent"
+	android:layout_height="90px"
+	android:background="@drawable/board_bg_toolbar"
+	android:paddingLeft="10px"
+	android:paddingRight="10px"
+	android:paddingTop="19px"
+	android:paddingBottom="9px"
+	android:gravity="center">
+	
+	<Button android:id="@+id/toolbar3_01"
+	android:layout_width="250px"
+	android:layout_height="match_parent"
+	android:textColor="#ffffff"
+	android:textSize="34px"
+	android:gravity="center"
+	android:layout_marginRight="8px"
+	android:background="@drawable/board_btn_toolbar"/>
+	
+	<Button android:id="@+id/toolbar3_02"
+	android:layout_width="250px"
+	android:layout_height="match_parent"
+	android:textColor="#ffffff"
+	android:textSize="34px"
+	android:gravity="center"
+	android:layout_marginRight="8px"
+	android:background="@drawable/board_btn_toolbar"/>
+	
+	<Button android:id="@+id/toolbar3_03"
+	android:layout_width="250px"
+	android:layout_height="match_parent"
+	android:textColor="#ffffff"
+	android:textSize="34px"
+	android:gravity="center"
+	android:background="@drawable/board_btn_toolbar"/>
+
+</LinearLayout>

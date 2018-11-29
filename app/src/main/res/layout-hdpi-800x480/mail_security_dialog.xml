@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/mail_popup_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/mail_top"
+        android:gravity="center"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:text="보안메일인증 "
+            android:textColor="#FFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/mail_split_popuptitle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mail_White"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/re_DEL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="보안메일 열람을 위해 로그인 비밀번호를 입력해 주세요."
+            android:textColor="#666666"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/PWD"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/mail_border_box_blue"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/mail_button_text_selector"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/del_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/mail_white"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/Ok"
+            style="@style/mail_mailListTitlexx"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_weight=".4"
+            android:background="@drawable/mail_btn_blue"
+            android:onClick="onClick"
+            android:text="확인"
+            android:textColor="@color/mail_dateil_btn_text_selector" />
+
+        <Button
+            android:id="@+id/can"
+            style="@style/mail_mailListTitlexx"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight=".4"
+            android:background="@drawable/mail_btn_blue"
+            android:text="취소"
+            android:textColor="@color/mail_dateil_btn_text_selector" />
+    </LinearLayout>
+
+</LinearLayout>

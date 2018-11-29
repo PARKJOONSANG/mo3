@@ -1,0 +1,45 @@
+<resources>
+    <!--모바일 오피스 3.0 Strings-->
+    <string name="action_setting87">Settings</string>
+    <!--IntroActivity-->
+    <string name ="intro_launching_error">모바일오피스 실행 오류</string>
+    <string name="intro_notInstalled_SSM">SSM이 설치 되지 않았습니다.\nSSM 설치/인증 후에 진행하여 주십시오.</string>
+    <string name="intro_notInstalled_SSM_INSTALLER">모바일 오피스 실행을 위한 \n필수앱이 없습니다.\n설치를 진행합니다.</string>
+    <string name="intro_notInstalled_STORE">스토어앱이 설치되지 않았습니다.\n 스토어 설치로 이동합니다.</string>
+    <!--로그인액티비티 -->
+    <string name="login_dialgo">로그인 알림</string>
+    <string name="login_failure">로그인 실패</string>
+    <string name="networkError">네트워크 오류</string>
+    <string name = "login_first_lauch_noti">최초 1회 ID로 로그인을 해야합니다.</string>
+    <!--ID -->
+    <string name="login_id_remeberID">ID 기억하기</string>
+    <!--PIN번호-->
+    <string name="pin_regi_title">PIN 등록</string>
+    <string name="pin_regi_content">PIN번호 등록이 되지 않았습니다.\nPIN등록을 진행하시겠습니까?</string>
+    <string name="pin_help">PIN번호 4자리를 입력하세요.</string>
+    <string name="pin_error">PIN번호가 일치하지 않습니다.\n다시입력해주시기 바랍니다.</string>
+    <string name="pin_regi_request1">PIN번호를 입력해주시기 바랍니다.</string>
+    <string name="pin_regi_request2">다시한번 PIN번호를 입력해주시기 바랍니다.</string>
+    <string name="pin_regi_sucess">PIN번호 등록 완료됐습니다. </string>
+    <string name ="pin_regi_noti">PIN등록을 먼저 해주세요</string>
+    <string name ="pin_auth_success">PIN 인증 성공</string>
+    <!--지문등록 요청 -->
+    <string name="fp_regi_title">지문 등록</string>
+    <string name="login_fingerprint_register_first">지문등록을\n먼저해주세요</string>
+    <string name="fp_regi_content">지문이 등록 되지 않았습니다.\지문등록을 해주시기 바랍니다.</string>
+    <string name="menu_easy_login_setting_title">간편로그인 설정</string>
+
+    <!--지문지원 불가능-->
+
+
+    <!--지문등록 요청 -->
+    <string name = "Exit">모바일오피스 종료</string>
+
+
+    <!--navigation drawer -->
+
+    <string name="logout">로그아웃</string>
+    <string name="confirm_logout">로그아웃 되었습니다.</string>
+    <string name="dialog_logout">로그아웃 하시겠습니까?</string>
+
+</resources>

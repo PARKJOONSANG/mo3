@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="board_AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/board_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/board_colorPrimaryDark</item>
+        <item name="colorAccent">@color/board_colorAccent</item>
+    </style>
+
+    <style name="board_noData_txt_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/board_textSize05</item>
+        <item name="android:textColor">#FF464646</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">등록된 게시물이 존재 하지 않습니다.</item>
+    </style>
+
+    <style name="board_divide_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#DDDDDD</item>
+    </style>
+
+</resources>

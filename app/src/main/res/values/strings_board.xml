@@ -1,0 +1,73 @@
+<resources>
+    <!--게시판   -->
+    <string name="board_hello">Hello World, EX_BOARDActivity!</string>
+    <string name="board_app_id">MOGP000003</string>
+    <string name="board_app_name">게시판</string>
+    <string name="board_title">게시판</string>
+    <string name="board_select_type1">제목    </string>
+    <string name="board_select_type2">게시자</string>
+
+    <!-- <string name="board_tab1">업무</string>
+    <string name="board_tab2">감사·청렴</string>
+    <string name="board_tab3">홍보</string>
+    <string name="board_tab4">경조사</string>
+    <string name="board_tab5">노조</string>
+    <string name="board_tab6">자유</string> -->
+    <string name="board_tab1">공지</string>
+    <string name="board_tab2">감사청렴</string>
+    <string name="board_tab3">노조</string>
+    <string name="board_tab4">업무홍보</string>
+    <string name="board_tab5">기술동향</string>
+    <string name="board_tab6">경조사</string>
+    <string name="board_tab7">자유홍보</string>
+
+    <string name="board_more">더 보기</string>
+
+    <string name="board_ok_button">확인</string>
+    <string name="board_cancel_button">취소</string>
+
+    <string name="board_write_error1">2글자 이상 입력하셔야 합니다.</string>
+    <string name="board_write_error2">첨부 파일이 없습니다.</string>
+    <string name="board_search_hint">검색어를 입력하세요.</string>
+    <string name="board_menu_update">업데이트</string>
+
+    <!-- <string-array name="board_tab">
+    	<item>업무</item>
+    	<item>감사·청렴</item>
+    	<item>홍보</item>
+    	<item>경조사</item>
+    	<item>노조</item>
+    	<item>자유</item>
+    </string-array> -->
+    <string-array name="board_tab">
+        <item>업무</item>
+        <item>감사청렴</item>
+        <item>노조</item>
+        <item>업무홍보</item>
+        <item>기술동향</item>
+        <item>경조사</item>
+        <item>자유홍보</item>
+    </string-array>
+
+    <!-- <string-array name="board_tab_num">
+    	<item>2</item>
+    	<item>1</item>
+    	<item>3</item>
+    	<item>4</item>
+    	<item>5</item>
+    	<item>6</item>
+    </string-array> -->
+    <string-array name="board_tab_num">
+        <item>2</item>
+        <item>1</item>
+        <item>5</item>
+        <item>8</item>
+        <item>9</item>
+        <item>4</item>
+        <item>10</item>
+    </string-array>
+
+    <string name="board_detail_error">단말에서 표현하지 못하는 내용을 포함하고 있습니다. 하이포털에서 확인 하세요.</string>
+
+
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  
+<!--   <item android:id="@+id/MENUREPLY" android:title="@string/LONG_MENU_REPLY"></item> -->
+<!--   <item android:id="@+id/MENUREPLYALL" android:title="@string/LONG_MENU_REPLYALL"></item> -->
+<!--   <item android:id="@+id/MENUDEL" android:title="@string/LONG_MENU_DELETE"></item> -->
+  <item android:id="@+id/MENUFORWARD" android:title="전달"></item>
+  <item android:id="@+id/MENUWRITE" android:title="편지쓰기"></item>
+<!--   <item android:id="@+id/MENUCHECKUNREAD" android:title="@string/LONG_MENU_UNREAD"></item> -->
+</menu>

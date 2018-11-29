@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/board_width09"
+    android:layout_height="@dimen/board_height10"
+    android:layout_gravity="center"
+    android:background="@color/board_list_color"
+    android:orientation="vertical"
+    android:paddingBottom="3dp"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:padding="@dimen/board_space03"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/board_textSize05" />
+
+    <ImageView
+        android:id="@+id/imgLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/board_split_popuptitle" />
+
+    <ListView
+        android:id="@+id/popup_list_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="@dimen/board_space01"
+        android:paddingRight="@dimen/board_space01"
+        android:layout_weight="3"
+        android:background="#FFFFFF"
+        android:cacheColorHint="#00000000"
+        android:divider="#DDDDDD"
+        android:dividerHeight="1dp"
+        android:headerDividersEnabled="true"
+        android:listSelector="@drawable/board_bg_board_list2"
+        android:visibility="visible" />
+
+</LinearLayout>

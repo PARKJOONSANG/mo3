@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://schemas.android.com/apk/res/com.ex.group.approval.easy"
+    android:layout_width="fill_parent"
+    android:layout_height="80px"
+    android:background="@drawable/easy_bg_rectangle"
+    android:paddingLeft="32px"
+    android:paddingRight="32px"
+    android:gravity="center_vertical"
+    >
+    <Button
+    	android:id="@+id/common_listview_attachment_button_file"
+		android:layout_width="fill_parent"
+		android:layout_height="80px"
+		android:background="@drawable/easy_btn_file_selector"
+		android:textStyle="bold"
+		android:textColor="#333333"
+		android:textSize="32px"
+		android:singleLine="true"
+		android:gravity="left|center"
+		/>
+</LinearLayout>

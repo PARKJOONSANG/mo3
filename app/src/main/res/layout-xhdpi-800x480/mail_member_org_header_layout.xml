@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/up_button_layout"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/up_button"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="60px"
+		android:clickable="true"
+		android:background="@drawable/mail_member_btn_top_selector" >
+		<!-- ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginLeft="10px"
+			android:src="@drawable/member_arrow_up_selector"
+			android:duplicateParentState="true" /-->
+		<TextView
+			android:id="@+id/up_button_text"
+			android:layout_width="fill_parent"
+			android:layout_height="60px"
+			android:layout_marginLeft="10px"
+			android:layout_marginRight="10px"
+			android:layout_gravity="center"
+			android:gravity="center_vertical"
+			android:text="상위보기"
+			android:textSize="21px"
+			android:textColor="#1950A3"
+			android:drawableLeft="@drawable/mail_member_icon_top"
+			android:drawablePadding="5px"/>
+	</LinearLayout>
+	
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:scaleType="fitXY"
+		android:src="@drawable/mail_member_split_212x2" />
+	
+	<TextView
+			android:id="@+id/suffix_dept_text"
+			android:layout_width="fill_parent"
+			android:layout_height="40px"
+			android:paddingLeft="10px"
+			android:layout_gravity="center"
+			android:gravity="center_vertical"
+			android:textSize="23px"
+			android:textColor="#1950A3"
+			android:background="#ffffff" />
+	
+	<ImageView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:scaleType="fitXY"
+		android:src="@drawable/mail_member_split_212x2" />
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:id="@+id/employeeteam" 
+	android:orientation="horizontal"
+	android:layout_width="fill_parent" 
+	android:layout_height="104px"
+	android:background="#FFFFFF" >
+	<LinearLayout
+		android:id="@+id/employeel" 
+		android:orientation="horizontal"
+		android:layout_width="fill_parent" 
+		android:layout_height="104px" >
+		<Button
+			android:id="@+id/employeel_check"
+			android:layout_width="52px"
+			android:layout_height="52px"
+			android:layout_marginLeft="15px"
+			android:layout_gravity="center"
+			android:background="@drawable/mail_member_multi_select_icon" />
+		<TextView
+			android:id="@+id/employeel_name"
+			android:text="이름"
+			android:textSize="24px"
+			android:textColor="#000000"
+			android:singleLine="true"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:layout_marginTop="20px"
+			android:layout_marginLeft="12px" 
+			android:gravity="center"/>
+		</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical" >
+
+    <!-- 타이틀 -->
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/board_inflate_title" />
+
+    <!-- 검색 -->
+    <LinearLayout
+        android:id="@+id/board_list_search_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/board_height04"
+        android:background="#ECECEC"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/board_space03" >
+
+        <Button
+            android:id="@+id/board_list_search_type"
+            android:layout_width="@dimen/board_width05"
+            android:layout_height="@dimen/board_height03"
+            android:background="@drawable/board_btn_search_type"
+            android:gravity="center"
+            android:tag="1"
+            android:text="@string/board_select_type1"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/board_textSize03" />
+
+        <LinearLayout
+            android:id="@+id/board_list_edit_lay"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/board_height03"
+            android:layout_weight="5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/board_list_edit_view"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/board_height03"
+                android:layout_weight="3"
+                android:layout_marginLeft="@dimen/board_space01"
+                android:layout_marginRight="@dimen/board_space01"
+                android:background="#FFFFFF"
+                android:gravity="center_vertical"
+                android:hint="@string/board_search_hint"
+                android:imeOptions="actionSearch"
+                android:padding="@dimen/board_space01"
+                android:singleLine="true"
+                android:textColor="#3D3D3D"
+                android:textSize="@dimen/board_textSize01" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/board_list_search_btn"
+            android:layout_width="@dimen/board_width03"
+            android:layout_height="@dimen/board_height03"
+            android:background="@drawable/board_btn_searchs" />
+    </LinearLayout>
+
+    <!-- 탭 영역 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/board_height01"
+        android:orientation="horizontal"
+         >
+
+        <Button
+            android:id="@+id/board_list_tab01"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/board_tab01_selector_"
+            android:gravity="center"
+            android:tag="0"
+            />
+
+        <Button
+            android:id="@+id/board_list_tab02"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/board_tab02_selector_"
+            android:gravity="center"
+            android:tag="1"
+            />
+
+        <Button
+            android:id="@+id/board_list_tab03"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/board_tab03_selector_"
+            android:gravity="center"
+            android:tag="2"
+            />
+
+        <Button
+            android:id="@+id/board_list_tab04"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/board_tab04_selector_"
+            android:gravity="center"
+            android:tag="3"
+            />
+
+        <Button
+            android:id="@+id/board_list_tab05"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/board_tab05_selector_"
+            android:gravity="center"
+            android:tag="4"
+            />
+
+        <Button
+            android:id="@+id/board_list_tab06"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/board_tab06_selector_"
+            android:gravity="center"
+            android:tag="5"
+            />
+    </LinearLayout>
+
+    <!-- 게시물 목록 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/board_detail_nodata"
+            style="@style/board_noData_txt_style" />
+
+        <ListView
+            android:id="@+id/board_list_01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#DDDDDD"
+            android:dividerHeight="1dp"
+            android:headerDividersEnabled="true"
+            android:visibility="visible" />
+
+        <ListView
+            android:id="@+id/board_list_02"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#d1e4e4"
+            android:dividerHeight="1px"
+            android:headerDividersEnabled="true"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/board_list_03"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#d1e4e4"
+            android:dividerHeight="1px"
+            android:headerDividersEnabled="true"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/board_list_04"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#d1e4e4"
+            android:dividerHeight="1px"
+            android:headerDividersEnabled="true"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/board_list_05"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#d1e4e4"
+            android:dividerHeight="1px"
+            android:headerDividersEnabled="true"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/board_list_06"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#d1e4e4"
+            android:dividerHeight="1px"
+            android:headerDividersEnabled="true"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

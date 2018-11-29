@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="104dp"
+    android:weightSum="104"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/main_app_icon"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="70">
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="70"
+                android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8">
+            </LinearLayout>
+                <ImageView
+                    android:clickable="true"
+                    android:id="@+id/appicon"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="62"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/app_icon_board"
+                    />
+
+            </LinearLayout><!--아이콘을 표시하기 위한 레이아웃-->
+            <LinearLayout
+                android:id="@+id/click"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="90">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"/>
+                <LinearLayout
+                    android:id="@+id/appicon_state_vpn_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:weightSum="60"
+                    android:orientation="vertical"
+                    android:layout_weight="20">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="5"/>
+                    <ImageView
+                        android:id="@+id/appicon_state_vpn"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="17"
+                        android:src="@drawable/main_icon_app_vpn"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/appicon_state_update_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:weightSum="60"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="5"/>
+                    <ImageView
+                        android:id="@+id/appicon_state_update"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="17"
+                        android:src="@drawable/main_icon_app_update"/>
+
+                </LinearLayout>
+            </LinearLayout><!--vpn과 update를 표시하기 위한 레이아웃-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="84">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="42"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="42"
+                    android:weightSum="60"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="34"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="14"
+                        android:weightSum="42"
+                        android:orientation="horizontal">
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"/>
+                        <RelativeLayout
+                            android:id="@+id/unreadbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            >
+
+                            <TextView
+                                android:visibility="gone"
+                                android:id="@+id/appicon_count"
+                                android:paddingLeft="4dp"
+                                android:paddingRight="4dp"
+                                android:background="@drawable/main_app_count_circle"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textSize="9sp"
+                                android:textColor="#ffffff"
+                                android:text="2"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout><!--읽지 않은 숫자를 세기 위한 레이아웃-->
+        </RelativeLayout>
+    <View
+        android:id="@+id/main_app_view1"
+        android:layout_width="match_parent"
+        android:layout_weight="6"
+        android:layout_height="0dp"/>
+    <TextView
+        android:id="@+id/main_app_name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="18"
+        android:gravity="center|top"
+        android:textSize="12sp"
+        android:textColor="#222222"
+        android:text="게시판"
+        />
+    <View
+        android:id="@+id/main_app_view2"
+        android:layout_width="match_parent"
+        android:layout_weight="9.99"
+        android:layout_height="0dp"/>
+
+
+
+
+
+
+</LinearLayout>

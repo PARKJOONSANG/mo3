@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        layout="@layout/mail_cj_title" />
+
+    <LinearLayout
+        android:id="@+id/lly_searchlayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/mail_border_line"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/SearchTypeBtn"
+            style="@style/mail_sendMailListNote"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight=".2"
+            android:background="@drawable/mail_border_box"
+            android:gravity="center"
+            android:text="제목" />
+
+        <EditText
+            android:id="@+id/SearchInputText"
+            style="@style/mail_sendMailListNote"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".7"
+            android:background="@drawable/mail_border_box"
+            android:gravity="center_vertical"
+            android:hint="@string/mail_Receivi_Search_Hint_Text"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="10dp"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btn_sesarch_selector"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"
+            android:background="@drawable/mail_btn_search_selector"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/mail_border_line"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <TextView
+            android:id="@+id/settitle"
+            style="@style/mail_sendMailListTab"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="sjsun5318@naver.com"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/lastupdate"
+            style="@style/mail_mailListTitlexx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="2011.09.06 오후 05:46"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/updateLayout2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:visibility="visible" >
+
+            <ProgressBar
+                android:id="@+id/update_progress"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:indeterminateDrawable="@drawable/mail_btn_refresh_black_anim" />
+
+            <TextView
+                android:id="@+id/updateBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/mail_btn_update_selector" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/layoutnotlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textnolist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10px"
+                android:textColor="#FF464646"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/receivelayout_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F7F7F7"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/receiveList_search"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:cacheColorHint="#FFFFFF"
+                android:divider="#DDDDDD"
+                android:dividerHeight="1px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/mail_border_line_top"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="메일 중요도"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/mail_priority" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 삭제 시 삭제 리스트 -->
+
+        <LinearLayout
+            android:id="@+id/receivelayout_del"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F7F7F7"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/receiveList_del"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:cacheColorHint="#FFFFFF"
+                android:divider="#DDDDDD"
+                android:dividerHeight="1px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/mail_border_line_top"
+                android:gravity="left|center_vertical"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="메일 중요도"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/mail_priority" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/del_button"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_gravity="center|center_vertical"
+                android:background="@drawable/mail_bg_toolbar"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                >
+
+                <Button
+                    android:id="@+id/ALLDel"
+                    android:layout_width="90dp"
+                    android:layout_height="70dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/Del"
+                    android:background="@drawable/mail_alldel"
+                    android:onClick="onClick"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/Del"
+                    android:layout_width="90dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/mail_del"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- 받은메일 함 -->
+
+        <LinearLayout
+            android:id="@+id/receivelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F7F7F7"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/receiveList"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:cacheColorHint="#FFFFFF"
+                android:divider="#DDDDDD"
+                android:dividerHeight="1px" />
+
+            <LinearLayout
+                android:id="@+id/priority_layout"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/mail_border_line_top"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="메일 중요도"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/mail_priority" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

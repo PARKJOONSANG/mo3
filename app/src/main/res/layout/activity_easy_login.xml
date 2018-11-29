@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="640"
+    tools:context="com.ex.group.folder.EasyLoginActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="46"
+        android:background="@color/main_title_bg">
+        <LinearLayout
+            android:background="#042244"
+            android:id="@+id/main_mobileoffice_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="360"
+            android:gravity="center">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"/>
+            <ImageView
+                android:id="@+id/button_prev"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:scaleType="fitCenter"
+                android:src="@drawable/menu_prev"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="66"></LinearLayout>
+
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="136"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:scaleType="fitCenter"
+                android:textColor="@color/white"
+                android:text="@string/menu_easy_login_setting_title"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"/>
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="106"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="594"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:weightSum="594">
+
+        <LinearLayout
+            android:id="@+id/login_setting_id"
+            android:gravity="center|left"
+            android:background="@drawable/login_id_edit_box"
+            android:layout_width="match_parent"
+            android:paddingLeft="6dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/id_radio"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:id="@+id/id_text"
+                android:textSize="17dp"
+                android:textColor="@color/login_id_edit_text"
+                android:text="ID 로그인"
+                android:paddingLeft="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/login_setting_pin"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/login_id_edit_box"
+            android:paddingLeft="6dp"
+            android:weightSum="3"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/login_pin"
+                android:gravity="center|left"
+                android:layout_height="46dp"
+                android:layout_width="200dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/pin_radio"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/pin_text"
+                    android:textSize="17dp"
+                    android:textColor="@color/login_id_edit_text"
+                    android:text="PIN 로그인"
+                    android:paddingLeft="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:layout_weight="3">
+
+                <TextView
+                    android:id="@+id/pin_set"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="8dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="PIN 번호 생성"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:background="@drawable/login_id_edit_box"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/login_setting_fp"
+            android:gravity="center|left"
+            android:background="@drawable/login_id_edit_box"
+            android:layout_width="match_parent"
+            android:paddingLeft="6dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/fp_radio"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:id="@+id/fp_text"
+                android:textSize="17dp"
+                android:textColor="@color/login_id_edit_text"
+                android:text="생체 로그인"
+                android:paddingLeft="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

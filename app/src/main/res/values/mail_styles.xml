@@ -1,0 +1,274 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="mail_AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/mail_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/mail_colorPrimaryDark</item>
+        <item name="colorAccent">@color/mail_colorAccent</item>
+    </style>
+
+
+    <style name="mail_MainListText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/mail_Black</item>
+    </style>
+
+    <style name="mail_MainListCountText">
+        <item name="android:textSize">18px</item>
+        <item name="android:textColor">@color/mail_Black</item>
+    </style>
+
+    <style name="mail_sendMailBG">
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:background">#FFF</item>
+    </style>
+    <style name="mail_sendMailBG2">
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:background">#FFF</item>
+        <item name="android:paddingBottom">1dp</item>
+    </style>
+
+    <style name="mail_sendMailBG1">
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:background">#F7F7F7</item>
+    </style>
+
+    <style name="mail_sendMailList">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">#FFF</item>
+        <item name="android:textColor">#FF666666</item>
+    </style>
+
+    <style name="mail_sendMailList1">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">#F7F7F7</item>
+        <item name="android:textColor">#FF666666</item>
+    </style>
+
+    <style name="mail_sendMailListTab">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <!--         <item name="android:background">#FFF</item> -->
+        <item name="android:textColor">#FF666666</item>
+    </style>
+    <style name="mail_sendMailListNote">
+        <item name="android:textSize">33sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">#FFF</item>
+        <item name="android:textColor">#FF666666</item>
+    </style>
+    <style name="mail_sendMailListTab1">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">#F7F7F7</item>
+        <item name="android:textColor">#FF666666</item>
+    </style>
+    <style name="mail_sendMailListNoteB">
+        <item name="android:textSize">33sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">#F7F7F7</item>
+        <item name="android:textColor">#FF666666</item>
+    </style>
+
+    <style name="mail_sendMailList2">
+        <item name="android:textSize">13sp</item>
+        <item name="android:background">#F7F7F7</item>
+        <item name="android:textColor">#FF666666</item>
+    </style>
+
+    <style name="mail_mailListTitle">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#FF666666</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="mail_mailListTitlexx">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#FF666666</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="mail_sendMailMain">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FF666666</item>
+    </style>
+
+    <style name="mail_MailListSearch">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FF666666</item>
+    </style>
+
+    <style name="mail_MailListSearchxx">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FF666666</item>
+    </style>
+
+    <style name="mail_ListTitleText">
+        <item name="android:textSize">22px</item>
+        <item name="android:textColor">#FF000000</item>
+    </style>
+
+    <style name="mail_ListTitleText.Small">
+        <item name="android:textColor">#FF333333</item>
+    </style>
+
+    <style name="mail_ListTitleText.WorkFlow">
+        <item name="android:textSize">18px</item>
+    </style>
+
+    <style name="mail_ListTitleText.WorkFlow.Large">
+        <item name="android:textSize">21px</item>
+    </style>
+
+    <style name="mail_ListDescText">
+        <item name="android:textSize">12px</item>
+        <item name="android:textColor">#FFCF1E22</item>
+    </style>
+
+    <style name="mail_ListDescText.WorkFlow">
+        <item name="android:textColor">#FF333333</item>
+    </style>
+
+    <style name="mail_SubtitleText">
+        <item name="android:textSize">18px</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+    </style>
+
+    <style name="mail_WriterText">
+        <item name="android:textSize">16px</item>
+        <item name="android:textColor">#FF000000</item>
+    </style>
+
+    <style name="mail_DateText">
+        <item name="android:textSize">14px</item>
+        <item name="android:textColor">#FF333333</item>
+    </style>
+
+    <style name="mail_AttachedFileText">
+        <item name="android:textSize">16px</item>
+        <item name="android:textColor">#FFFFB72D</item>
+    </style>
+
+    <style name="mail_ContentText">
+        <item name="android:textSize">21px</item>
+        <item name="android:textColor">#FF222222</item>
+    </style>
+
+    <style name="mail_WriterText.Reply">
+        <item name="android:textSize">18px</item>
+    </style>
+
+    <style name="mail_DateText.Reply">
+        <item name="android:textColor">#FFCF1E22</item>
+    </style>
+
+    <style name="mail_ContentText.Reply">
+        <item name="android:textSize">16px</item>
+        <item name="android:textColor">#FF333333</item>
+    </style>
+
+    <style name="mail_CommonButton_2">
+        <item name="android:textSize">18px</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:background">@drawable/mail_button_large_selector</item>
+    </style>
+
+
+    <style name="mail_title">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:shadowColor">#7A210F</item>
+        <item name="android:paddingLeft">20px</item>
+        <item name="android:paddingRight">20px</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="mail_listText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="mail_list_name">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="mail_list_company">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#C25919</item>
+    </style>
+    <style name="mail_list_team">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#0F66A3</item>
+    </style>
+    <style name="mail_list_tel">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+    <style name="mail_quickfunctext">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="mail_detail_name">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="mail_detail_params">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="mail_detail_params.title">
+        <item name="android:textColor">#464646</item>
+    </style>
+    <style name="mail_detail_dept">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="mail_detail_team">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#898989</item>
+    </style>
+    <style name="mail_button">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">@drawable/mail_member_btn_option_selector</item>
+    </style>
+    <!--<item name="android:background">@drawable/btn_delete_selector</item>-->
+    <style name="mail_button.delete">
+        <item name="android:background">@drawable/mail_member_btn_revert_selector</item>
+    </style>
+    <style name="mail_edittext">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">18px</item>
+        <item name="android:paddingRight">18px</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/mail_inputbox_color_selector</item>
+    </style>
+    <style name="mail_edittext.email">
+        <item name="android:paddingLeft">20px</item>
+        <item name="android:paddingRight">20px</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="mail_edittext.email.content">
+        <item name="android:gravity">left|top</item>
+        <item name="android:paddingTop">19px</item>
+        <item name="android:paddingBottom">19px</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+    <style name="mail_title_bar">
+        <item name = "android:background">@drawable/mail_member_title_cjworld</item>
+    </style>
+</resources>

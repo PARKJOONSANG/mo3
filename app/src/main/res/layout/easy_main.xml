@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/easy_common_ex_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFFFF"
+        android:gravity="right"
+        >
+		<Button
+		    android:id="@+id/approval"
+		    android:layout_width="@dimen/easyaproavl_width02"
+		    android:layout_height="@dimen/easyaproavl_height03"
+		    android:layout_gravity="center"
+		    android:background="@drawable/easy_btn_approval"
+		    android:layout_margin="10dp"
+		    />
+    </LinearLayout>
+    
+     <!-- 구분선 -->
+    <LinearLayout style="@style/easyproval_divide_line" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF5F5F5"
+        android:padding="10dp" >
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:text="결재함"
+		    android:textColor="#666666"
+		    android:textSize="@dimen/easyaproavl_textSize03"
+		    />
+    </LinearLayout>
+    
+     <!-- 구분선 -->
+    <LinearLayout style="@style/easyproval_divide_line" />
+
+    <ListView
+        android:id="@+id/main_listview_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        android:cacheColorHint="#00000000"
+        android:divider="#DDDDDD"
+        android:dividerHeight="1dp" />
+    <!--
+	    android:cacheColorHint="#FFFFFFFF" 
+	    android:dividerHeight="1px"
+    -->
+    
+    <!-- 구분선 -->
+    <LinearLayout style="@style/easyproval_divide_line" />
+    
+    <TextView
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#FFF5F5F5"
+	    android:gravity="bottom"
+	    android:text="연차휴가(적치1~3년)에 대한 정상적인 반려/회수처리를 하려면 하이포탈 홈페이지에서 해당 건에 대한 삭제를 하셔야 합니다."
+	    android:textColor="#666666"
+	    android:textSize="@dimen/easyaproavl_textSize03"
+	    />
+
+</LinearLayout>

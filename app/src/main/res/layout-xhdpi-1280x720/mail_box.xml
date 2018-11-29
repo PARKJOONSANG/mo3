@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        layout="@layout/mail_cj_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight=".7"
+            android:background="@drawable/mail_border_box"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/settitle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="13dp"
+                android:layout_weight=".3"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/mail_Black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_weight=".7"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/lastupdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginRight="5dp"
+                    android:gravity="bottom"
+                    android:singleLine="true"
+                    android:textColor="#CACACA"
+                    android:textSize="12sp" />
+
+                <FrameLayout
+                    android:id="@+id/updateLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="visible" >
+
+                    <ProgressBar
+                        android:id="@+id/update_progress"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:indeterminateDrawable="@drawable/mail_btn_refresh_black_anim" />
+
+                    <TextView
+                        android:id="@+id/updateBtn"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/mail_btn_update_selector" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+            <Button
+            android:id="@+id/sendmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_weight=".3"
+            android:background="@drawable/mail_btn_mail"
+            android:gravity="center|center_vertical"
+            android:text="편지쓰기"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/mail_white" />
+    </LinearLayout>
+
+    <!-- 편지함 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/mail_border_top_bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/mail_circle_navy"
+            android:visibility="visible" />
+
+        <TextView
+            style="@style/mail_sendMailList1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/mail_mailBox" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/MAINLISTVIEW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mail_border_line"
+        android:cacheColorHint="@color/mail_Black"
+        android:divider="#DDDDDD"
+        android:dividerHeight="1px" />
+    
+    
+     <LinearLayout  
+                 android:id="@+id/emptyMailLayout" 
+                 android:layout_width="match_parent" 
+                 android:layout_height="wrap_content" 
+                 android:gravity="center_horizontal"
+                 android:padding="10dp"
+                 android:visibility="gone"
+                   >
+                  <TextView
+                          android:layout_width="wrap_content" 
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          style="@style/mail_sendMailMain"
+                          android:text="로딩중입니다...." 
+                           />
+        </LinearLayout>   
+
+    <!-- 문서함 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/mail_border_top_bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="15dp"
+            android:visibility="visible"
+            android:src="@drawable/mail_circle_blue" />
+
+        <TextView
+            style="@style/mail_sendMailList1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/mail_docBox" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/MAINDOCVIEW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mail_border_line"
+        android:cacheColorHint="@color/mail_Black"
+        android:divider="#DDDDDD"
+        android:dividerHeight="1px" />
+
+     <LinearLayout  
+                 android:id="@+id/emptyDocLayout" 
+                 android:layout_width="match_parent" 
+                 android:layout_height="wrap_content" 
+                 android:gravity="center_horizontal"
+                 android:padding="10dp"
+                 android:visibility="visible"
+                   >
+                  <TextView
+                          android:layout_width="wrap_content" 
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          style="@style/mail_sendMailMain"
+                          android:text="로딩중입니다...." 
+                           />
+        </LinearLayout>   
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/mail_border_top_bottom" />
+
+</LinearLayout>

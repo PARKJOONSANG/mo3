@@ -1,0 +1,256 @@
+<resources>
+    <string name="easyaproval_app_name">간이결재</string>
+
+    <string name="easyaproval_app_id">MOGP000006</string>
+
+    <string name="easyaproval_MemberSearch">_@@ 어플리케이션을 설치하시기 바랍니다.</string>
+
+    <string name="easyaproval_dialog_ok">확인</string>
+
+    <string name="easyaproval_write_approval">결재신청</string>
+
+    <string name="easyaproval_label_tab1">Address Book</string>
+
+    <string name="easyaproval_label_tab2">Organ.Chart</string>
+
+    <string name="easyaproval_label_search">Search</string>
+
+    <string name="easyaproval_label_selectall">Select All</string>
+
+    <string name="easyaproval_label_done">Done</string>
+
+    <string name="easyaproval_label_cancel">Cancel</string>
+
+    <string name="easyaproval_label_add">Add</string>
+
+    <string name="easyaproval_register_button">Send</string>
+
+    <string name="easyaproval_text_send">Send</string>
+
+    <string name="easyaproval_cancel_button">Cancel</string>
+
+    <string name="easyaproval_label_footer">Load More Lists</string>
+
+    <string name="easyaproval_text_loading">Loading Lists</string>
+
+    <string name="easyaproval_label_organchart">Upper Organ.Chart</string>
+
+    <string name="easyaproval_label_upper_organchart">Upper Organ.Chart View</string>
+
+    <string name="easyaproval_label_fax">Fax</string>
+
+    <string name="easyaproval_telephone">휴대전화</string>
+
+    <string name="easyaproval_office_telephone">회사전화</string>
+
+    <string name="easyaproval_inner_telephone">구내전화</string>
+
+    <string name="easyaproval_outer_email">E-Mail</string>
+
+    <string name="easyaproval_nateon">NateOn Biz</string>
+
+    <string name="easyaproval_text_work">Job Description</string>
+
+    <string name="easyaproval_msg_noresult">검색 결과가 없습니다.</string>
+
+    <string name="easyaproval_viewlast">Recent Searches</string>
+
+    <string name="easyaproval_label_view_mygroup">View My Team</string>
+
+    <string name="easyaproval_my_profile">My Profile</string>
+
+    <string name="easyaproval_send_group_email">Email</string>
+
+    <string name="easyaproval_send_group_sms">SMS</string>
+
+    <string name="easyaproval_callMobile">Mobile Call</string>
+
+    <string name="easyaproval_callOffice">Office Call</string>
+
+    <string name="easyaproval_sendSMS">SMS</string>
+
+    <string name="easyaproval_sendEmail">Email</string>
+
+    <string name="easyaproval_viewContent">View in detail</string>
+
+    <string name="easyaproval_send_skone">HANDOK Mobile에서 전송했습니다.</string>
+
+    <string name="easyaproval_label_detail">상세 보기</string>
+
+    <string name="easyaproval_save_phone_addr">Add to Phonebook</string>
+
+    <!--<string name="viewmyteam">내 소속팀 보기</string>-->
+
+
+    <string name="easyaproval_main_title">구성원검색</string>
+
+    <string name="easyaproval_organize_search">조직도</string>
+
+    <string name="easyaproval_recent_search">최근 검색</string>
+
+    <string name="easyaproval_member_info">개인 정보</string>
+
+    <string name="easyaproval_member_multiselect">다중 선택</string>
+
+    <string name="easyaproval_member_sendsms">SMS 송신</string>
+
+    <string name="easyaproval_request_server">Data Requesting...</string>
+
+    <string name="easyaproval_ok_button">확인</string>
+
+    <string name="easyaproval_recent_db_notice">최근 검색 결과가 없습니다.</string>
+
+    <string name="easyaproval_member_sendemail">E-mail 송신</string>
+
+    <string name="easyaproval_editbox_alert">문자는 2자 이상, 숫자는 3자 이상 입력하셔야 합니다.</string>
+
+    <string name="easyaproval_editbox_alert2">한글, 영문, 숫자만 입력 가능합니다.</string>
+
+    <string name="easyaproval_send_group">단체 전송</string>
+
+    <string name="easyaproval_search_result_team">팀 검색 결과</string>
+
+    <string name="easyaproval_search_result_name">이름 검색 결과1</string>
+
+    <string name="easyaproval_search_result_work">담당 업무 검색 결과</string>
+
+    <string name="easyaproval_search_result_email">이메일 검색 결과</string>
+
+    <string name="easyaproval_search_result_mobile">휴대전화 검색 결과</string>
+
+    <string name="easyaproval_search_result_phone">유선전화 검색 결과</string>
+
+    <string name="easyaproval_search_result_id">사번 검색 결과</string>
+
+    <string name="easyaproval_tab3_label">그룹 구성원</string>
+
+    <string name="easyaproval_tab4_label">아웃룩 주소록</string>
+
+    <string name="easyaproval_groupName">전체 관계사</string>
+
+    <string name="easyaproval_up_text">상위 보기</string>
+
+    <string name="easyaproval_company_option">검색 옵션</string>
+
+    <string name="easyaproval_text_company">소속</string>
+
+    <string name="easyaproval_text_id">사번 :</string>
+
+    <string name="easyaproval_text_role">직위 :</string>
+
+    <string name="easyaproval_unselect_all">Deselect All</string>
+
+    <string name="easyaproval_select_all">Select All</string>
+
+    <string name="easyaproval_text_except">외</string>
+
+    <string name="easyaproval_text_person">명</string>
+
+    <string name="easyaproval_text_team">팀</string>
+
+    <string name="easyaproval_input_title">제목을 입력해 주세요.</string>
+
+    <string name="easyaproval_input_content">내용을 입력해 주세요.</string>
+
+    <string name="easyaproval_request_email_send">E-mail 전송을 요청하였습니다.</string>
+
+    <string name="easyaproval_request_sms_send">SMS 전송을 요청하였습니다.</string>
+
+    <string name="easyaproval_view_tree">트리 보기</string>
+
+    <string name="easyaproval_view_list">리스트 보기</string>
+
+    <string name="easyaproval_content">내용</string>
+
+    <string name="easyaproval_title">제목</string>
+
+    <string name="easyaproval_order_company">회사명순</string>
+
+    <string name="easyaproval_order_name">이름순</string>
+
+    <string name="easyaproval_text_overwrite">은 휴대폰 주소록에 이미 존재합니다.\n새로 추가하시겠습니까?</string>
+
+    <string name="easyaproval_text_save_phone">휴대폰 주소록에 저장되었습니다.</string>
+
+    <string name="easyaproval_copy_complete_addr">휴대폰 주소록에 복사가 완료되었습니다.</string>
+
+    <string name="easyaproval_copy_addr">주소록 복사</string>
+
+    <string name="easyaproval_copy_ing_addr">휴대폰 주소록에 복사 중 입니다.</string>
+
+    <string name="easyaproval_tiktok">tiktok</string>
+
+    <string name="easyaproval_text_add_tiktok">을 친구로 추가하시겠습니까?</string>
+
+    <string name="easyaproval_no_tiktok">TikTok 어플리케이션을 설치하시기 바랍니다.</string>
+
+    <string name="easyaproval_no_emailclient">메일 어플리케이션을 설치하시기 바랍니다.</string>
+
+    <string name="easyaproval_no_email">이메일 주소 정보가 없습니다.</string>
+
+    <string name="easyaproval_no_mobile">휴대 전화번호 정보가 없습니다.</string>
+
+    <string name="easyaproval_no_office">회사 전화번호 정보가 없습니다.</string>
+
+    <string name="easyaproval_title_save_phone">폰 주소록 저장</string>
+
+    <string name="easyaproval_title_no_tiktok">TikTok</string>
+
+    <string name="easyaproval_error_input_search">검색어 입력 오류</string>
+
+    <string name="easyaproval_title_no_mail">메일</string>
+
+    <string name="easyaproval_text_receiver">받는이</string>
+
+    <string name="easyaproval_over_count">최대 50명까지 전송 가능합니다.</string>
+
+    <string name="easyaproval_text_error">오류</string>
+
+    <string name="easyaproval_search">Search</string>
+
+    <string name="easyaproval_text_add_list">수신인추가</string>
+
+    <string name="easyaproval_receive_list">수신목록</string>
+
+    <string name="easyaproval_delete">삭제</string>
+
+    <string name="easyaproval_add_receiver">수신인 추가</string>
+
+    <string name="easyaproval_add_receiver_text">단체 문자 전송은 최대 50명까지만 전송 가능합니다.\n더 이상 수신인 추가가 불가능합니다.</string>
+
+    <!-- <string name="recent_notice">검색 결과가 없습니다.</string><string name="my_profile">내 정보</string> -->
+
+
+    <string name="easyaproval_label_tab3">MS Outlook</string>
+
+    <string name="easyaproval_joindate">입사일</string>
+
+    <string name="easyaproval_promotiondate">최종승진일</string>
+
+    <string name="easyaproval_label_tab4">메일주소록</string>
+
+    <string name="easyaproval_corp_id">회사아이디</string>
+
+    <string name="easyaproval_landline">집전화</string>
+
+    <string name="easyaproval_memo">메모</string>
+
+    <string name="easyaproval_company">회사</string>
+
+    <string name="easyaproval_dept">부서</string>
+
+    <string name="easyaproval_english_name">영문명</string>
+
+    <string name="easyaproval_id">아이디</string>
+
+    <string name="easyaproval_groupcompany">그룹사</string>
+
+    <string name="easyaproval_search_hint">이름, 부서, 휴대전화, 회사전화</string>
+
+    <string name="easyaproval_search_hint1">이름, 영문명, 팀명, 담당 업무, 이메일, 휴대전화, 회사 전화</string>
+
+    <string name="easyaproval_dialog_no_member">선택할 수 있는 직원이 없습니다.</string>
+
+    <string name="easyaproval_select_team">팀 선택</string>
+</resources>
+

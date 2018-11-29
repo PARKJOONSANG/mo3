@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:clickable="false"  >
+	<LinearLayout
+		android:id="@+id/layout_dept"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingLeft="5px"
+		android:paddingRight="5px"
+		android:clickable="false">
+		<ImageView
+			android:id="@+id/button_expand"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center" />
+		<TextView
+			android:id="@+id/team_name"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:minHeight="65px"
+			android:layout_marginLeft="10px"
+			android:layout_gravity="center"
+			android:gravity="center_vertical"
+			android:textSize="28px"
+			android:textColor="#000000"
+			/>
+	</LinearLayout>
+</FrameLayout>

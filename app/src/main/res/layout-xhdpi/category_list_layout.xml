@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    >
+    <LinearLayout
+        android:id="@+id/main_category_tittle_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/main_category_title_groupware"
+        android:paddingLeft="11dp"
+        android:paddingRight="11dp"
+        android:orientation="horizontal"
+        android:gravity="center|left">
+        <TextView
+            android:id="@+id/main_category_tittle_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:text="그룹웨어"/>
+    </LinearLayout>  <!--카테고리 상단 타이틀 레이아웃    레이아웃 id = main_categori_title_linearLayout -->
+    <View
+        android:id="@+id/main_category_space1"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="10"
+        android:background="@color/white"/>   <!--카테고리 스페이스1 id = main_categori_space1-->
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/main_category_ViewPager_LinearLayout_small"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="66dp">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/main_category_ViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+    </LinearLayout>  <!--카테고리 접혔을시 ViewPager id = main_category_ViewPager-->
+    <LinearLayout
+
+        android:id="@+id/main_category_LinearLayout_big"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+
+            android:id="@+id/main_category_gridview_LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="74dp">
+            <GridView
+                android:id="@+id/main_category_GridView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="4"
+                ></GridView>
+        </LinearLayout><!--gridview-->
+        <LinearLayout
+            android:id="@+id/main_category_Button_LinerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:weightSum="326"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/main_category_Button_reset"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="106"
+                android:weightSum="106"
+                android:background="@drawable/main_category_reset_selecter"
+               >
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/icon_reset"/>
+                    <android.support.v4.widget.Space
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|left"
+                        android:textSize="14sp"
+                        android:textColor="#052850"
+                        android:text="초기화"
+                        />
+                </LinearLayout>
+
+            </LinearLayout><!--초기화 버튼-->
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"/>
+            <LinearLayout
+                android:id="@+id/main_category_Button_commit"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="106"
+                android:weightSum="106"
+                android:background="@drawable/main_category_commit_selecter"
+                >
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|left"
+                        android:textSize="14sp"
+                        android:textColor="#ffffff"
+                        android:text="설정저장"
+                        />
+                </LinearLayout>
+
+            </LinearLayout><!--설정 버튼-->
+        </LinearLayout><!--button-->
+        <View
+            android:id="@+id/main_category_space2"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_weight="120"/>
+        
+    </LinearLayout><!--카테고리 펼쳤을때 gridview 설정하기-->
+    <View
+        android:id="@+id/main_category_space3"
+        android:layout_width="match_parent"
+        android:layout_height="6dp" />
+    <LinearLayout
+        android:id="@+id/main_category_CheckBox_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:orientation="horizontal"
+        android:gravity="top|center">
+        <CheckBox
+            android:id="@+id/main_category_CheckBox"
+            android:checked="false"
+            android:button="@color/transparent"
+            android:background="@drawable/main_category_checkbox_selector"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+           />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+

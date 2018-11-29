@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/memberinfo"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/easy_member_title" />
+    <!--
+         <TextView
+		style="@style/title"
+		android:layout_width="fill_parent"
+		android:layout_height="70px"
+		android:textSize="30px"
+		android:gravity="center"
+		android:background="@drawable/member_bg_title_01"
+		android:text="@string/label_detail" />
+    -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="170dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal" >
+
+                <FrameLayout
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginBottom="20px"
+                    android:layout_marginLeft="14px"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/easy_member_bg_profile02" >
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/easy_member_bg_profile02" />
+
+                    <ImageView
+                        android:id="@+id/imgPhoto"
+                        android:layout_width="80dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center|center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/easy_member_profile_image" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <FrameLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="28px"
+                        android:layout_marginTop="20dp" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:id="@+id/EMPLOYEE_INFO_NAME"
+                                    style="@style/easyaproavl_detail_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="end"
+                                    android:singleLine="true"
+                                    android:textColor="#464646"
+                                    android:textSize="25sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <!-- 사번 -->
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/easyaproval_text_id"
+                                    android:textColor="#8A8A8A"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:id="@+id/employee_serialno"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20px"
+                                    android:ellipsize="end"
+                                    android:singleLine="true"
+                                    android:textColor="#3E3E3E"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5px"
+                                android:orientation="horizontal" >
+
+                                <!-- 직위 -->
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/easyaproval_text_role"
+                                    android:textColor="#8A8A8A"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:id="@+id/employee_role"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20px"
+                                    android:ellipsize="end"
+                                    android:singleLine="true"
+                                    android:textColor="#3E3E3E"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5px"
+                                android:orientation="horizontal" >
+
+                                <!-- 입사일자 -->
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/easyaproval_joindate"
+                                    android:textColor="#8A8A8A"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:id="@+id/employee_joindate"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20px"
+                                    android:ellipsize="end"
+                                    android:singleLine="true"
+                                    android:textColor="#3E3E3E"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5px"
+                                android:orientation="horizontal" >
+
+                                <!-- 승진일자 -->
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/easyaproval_promotiondate"
+                                    android:textColor="#8A8A8A"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:id="@+id/employee_promotiondate"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20px"
+                                    android:ellipsize="end"
+                                    android:singleLine="true"
+                                    android:textColor="#3E3E3E"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/easy_member_split_212x2" />
+
+            <!-- 겸직시 확장되는 부분 -->
+
+            <LinearLayout
+                android:id="@+id/layout_dept"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                android:paddingBottom="10px"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:paddingTop="10px" >
+				>
+
+                <TextView
+                    android:id="@+id/company_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:textColor="#1950A3"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/suffix_dept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10px"
+                    android:gravity="center"
+                    android:textColor="#1950A3"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <!-- 겸직시 확장되는 부분 -->
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/easy_member_split_212x2" />
+
+            <!-- 핸드폰 -->
+
+            <LinearLayout
+                android:id="@+id/layout_tel"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="15px" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/easyaproval_telephone"
+                            android:textColor="#8A8A8A"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/EMPLOYEE_INFO_TEL"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#3E3E3E"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/EMPLOYEE_INFO_SMS_BTN"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/easy_member_btn_sms_selector"
+                        android:clickable="true" />
+
+                    <ImageView
+                        android:id="@+id/EMPLOYEE_INFO_TEL_BTN"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/easy_member_btn_mobile_selector"
+                        android:clickable="true" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 핸드폰 -->
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/easy_member_split_212x2" />
+
+            <!-- 회사전화 -->
+
+            <LinearLayout
+                android:id="@+id/layout_office"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="15px" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/easyaproval_office_telephone"
+                            android:textColor="#8A8A8A"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/EMPLOYEE_INFO_OFFICE"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#3E3E3E"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/EMPLOYEE_INFO_OFFICE_BTN"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/easy_member_btn_phone_selector"
+                        android:clickable="true" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/easy_member_split_212x2" />
+
+            <!-- 회사메일 -> 구내전화 -->
+
+            <LinearLayout
+                android:id="@+id/layout_inner"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <!--
+                 <LinearLayout
+				android:id="@+id/layout_mail"
+				android:layout_width="fill_parent"
+				android:orientation="vertical"
+				android:layout_height="89px"
+				android:visibility="visible"
+				android:background="@drawable/member_list_bg_n">
+                -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="15px" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/easyaproval_inner_telephone"
+                            android:textColor="#8A8A8A"
+                            android:textSize="14sp" />
+                        <!--
+                             <TextView
+							android:id="@+id/EMPLOYEE_INFO_MAIL"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:textColor="#3E3E3E"
+							android:textSize="30px" />
+                        -->
+
+                        <TextView
+                            android:id="@+id/EMPLOYEE_INFO_INNER"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#3E3E3E"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/EMPLOYEE_INFO_MAIL_BTN"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="12px"
+                        android:background="@drawable/easy_member_btn_mail_selector"
+                        android:clickable="true"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/easy_member_split_212x2" />
+
+            <!-- 회사메일 -->
+
+            <LinearLayout
+                android:id="@+id/layout_outmail"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0px"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="15px" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/easyaproval_outer_email"
+                            android:textColor="#8A8A8A"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/EMPLOYEE_INFO_OUTMAIL"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#3E3E3E"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/EMPLOYEE_INFO_OUTMAIL_BTN"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="12px"
+                        android:background="@drawable/easy_member_btn_mail_selector"
+                        android:clickable="true"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/easy_member_split_212x2" />
+
+            <!-- 직무 -->
+
+            <LinearLayout
+                android:id="@+id/addjobList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ex.group.folder">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 직원검색에서 전화번호 저장 -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_OWNER_DATA" />
+    <uses-permission android:name="android.permissions.READ_DATABASE" />
+    <uses-permission android:name="android.permissions.WRITE_DATABASE" />
+
+    <!-- 지문인증 -->
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" />
+    <uses-permission android:name="com.ex.group.board.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.ex.group.folder.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:icon="@drawable/app_icon_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".IntroActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.ex.group.folder.LAUNCH_MAIN" />
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <!--<action android:name="com.ex.group.folder.LOGIN" />
+                <action android:name="com.ex.group.folder.MCUVIC_LOGIN" />-->
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.EXGROUP" />
+            </intent-filter>
+
+        </activity>
+      <!--  <activity
+            android:name=".dialog.InstallerDialog2"
+            android:theme="@style/DialogTheme" />-->
+        <activity
+            android:name="com.nprotect.keycryptm.IxCustomInputActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="com.ex.group.folder.MCUVIC_LOGIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.EXGROUP" />
+            </intent-filter>
+
+
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.sktelecom.dumymobileoffice.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".PIN_REGISTERActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".EasyLoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".WebViewActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <receiver
+            android:name=".receiver.SGVPNBroadcastReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.sgvpn.vpnservice.STATUS"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".receiver.RefreshReceiverUnder26"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.ex.group.store.GO_MOFFICE"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".service.AppStateService"
+            android:stopWithTask="false"
+            ></service>
+
+        <!-- FCM -->
+        <!-- message 수신 -->
+        <service android:name=".service.FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- Firebase ID 수신 -->
+        <service android:name=".service.FirebaseIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!--
+    █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
+    █  o 파일뷰어                                                                                                                                                                                       █
+    █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█
+        -->
+
+        <activity
+            android:name="com.sk.pe.group.imageviewer.activity.ImageViewerMainActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.ex.group.imageviewer.IMAGEVIEWER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.sk.pe.group.imageviewer.service.ImageCacheService"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.sk.pe.group.imageviewer.service.ImageCacheService" />
+            </intent-filter>
+        </service>
+
+        <!--
+    █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
+    █  ㅇ게시판                                                                                                                                                                                         █
+    █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█
+        -->
+
+        <activity
+            android:name="com.ex.group.board.activity.BoardListActivity"
+            android:configChanges="orientation"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name="com.ex.group.board.activity.BoardDetailActivity"
+            android:configChanges="orientation"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.ex.group.board.activity.BoardAlertActivity"
+            android:configChanges="orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.ex.group.board.activity.NullActivity"
+            android:configChanges="orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name=".provider.AuthProvider"
+            android:authorities="com.ex.group.folder"
+            android:exported="true" />
+
+        <receiver android:name="com.ex.group.board.receiver.PushReceiver">
+            <intent-filter>
+                <action android:name="com.ex.group.push.parameter" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.ex.group.board.receiver.C2DMReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.ex.group.board" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.ex.group.board" />
+            </intent-filter>
+        </receiver>
+
+        <!--
+    █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
+    █  o사내메일                                                                                                                                                                                        █
+    █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█
+        -->
+
+        <activity
+            android:name="com.ex.group.mail.activity.EmailMainActivity"
+            android:configChanges="orientation"
+            android:theme="@android:style/Theme.NoTitleBar">
+
+            <!--
+            <intent-filter>
+                &lt;!&ndash; 앱배포시 &ndash;&gt;
+                &lt;!&ndash;<action android:name="com.ex.group.mail.LAUNCH_MAIN" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.EXGROUP"/>&ndash;&gt;
+
+                &lt;!&ndash; 단독실행시 &ndash;&gt;
+                &lt;!&ndash;<action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />&ndash;&gt;
+
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.ex.group.mail.activity.EmailReceiveActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.ex.group.mail.activity.EmailDetailActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.ex.group.mail.addressbook.activity.AddressTabActivity"
+            android:configChanges="orientation"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.ex.group.mail.addressbook.activity.AddressSearchActivity"
+            android:configChanges="orientation"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.ex.group.mail.addressbook.activity.AddressListActivity"
+            android:configChanges="orientation"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.ex.group.mail.activity.EmailWriteActivity"
+            android:configChanges="orientation"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.ex.group.mail.EMAILCLIENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--
+    █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
+    █  o간이결재                                                                                                                                                                                        █
+    █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█
+        -->
+
+        <activity
+            android:name="com.ex.group.approval.easy.activity.ApprovalMainActivity"
+            android:configChanges="orientation"
+            android:label="@string/easyaproval_app_name">
+
+            <!--
+            <intent-filter>
+                &lt;!&ndash; 앱배포시 &ndash;&gt;
+                &lt;!&ndash; <action android:name="com.ex.group.approval.easy.LAUNCH_MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.EXGROUP" /> &ndash;&gt;
+
+                &lt;!&ndash; 단독실행시/개발시 &ndash;&gt;
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.ex.group.approval.easy.activity.ApplyOutsideApprovalActivity"
+            android:configChanges="orientation" />
+        <activity
+            android:name="com.ex.group.approval.easy.activity.ApplyVacationApprovalActivity"
+            android:configChanges="orientation" />
+        <activity
+            android:name="com.ex.group.approval.easy.activity.ApplyApprovalLineActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ex.group.approval.easy.activity.ApprovalListActivity"
+            android:configChanges="orientation" />
+        <activity
+            android:name="com.ex.group.approval.easy.activity.ApprovalDetailActivity"
+            android:configChanges="orientation" />
+        <activity
+            android:name="com.ex.group.approval.easy.activity.test.TestMainActivity"
+            android:configChanges="orientation"></activity>
+        <activity
+            android:name="com.ex.group.approval.easy.activity.test.TestResultActivity"
+            android:configChanges="orientation"
+            android:label="" />
+        <activity
+            android:name="com.ex.group.approval.easy.addressbook.activity.AddressTabActivity"
+            android:configChanges="orientation"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.ex.group.approval.easy.addressbook.activity.AddressSearchActivity"
+            android:configChanges="orientation"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.ex.group.approval.easy.addressbook.activity.AddressListActivity"
+            android:configChanges="orientation"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+    </application>
+
+</manifest>

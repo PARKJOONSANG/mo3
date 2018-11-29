@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/multiselect_footer" 
+	android:layout_width="fill_parent" 
+	android:layout_height="90px"
+	android:background="@drawable/mail_member_bg_toolbar">
+	<Button
+		android:id="@+id/multiselecttitle_check"
+		android:layout_width="0px"
+		android:layout_height="62px"
+		android:layout_weight="1"
+		android:layout_marginLeft="10px" 
+		android:layout_marginTop="5px" 
+		android:gravity="center"  
+		android:text="@string/mail_label_selectall"
+		android:textColor="#FFFFFF"
+		android:textSize="24px"
+		android:background="@drawable/mail_member_btn_toolbar_selector" />
+	<Button
+		android:id="@+id/multiselect_confirm"
+		android:text="@string/mail_label_done"
+		android:layout_width="0px"
+		android:layout_height="62px"
+		android:layout_weight="1"
+		android:layout_marginLeft="5px" 
+		android:layout_marginRight="5px" 
+		android:layout_marginTop="5px" 
+		android:gravity="center"  
+		android:textColor="#FFFFFF"
+		android:textSize="24px"
+		android:background="@drawable/mail_member_btn_toolbar_selector" />
+	<Button
+		android:id="@+id/multiselect_cancel"
+		android:text="@string/mail_label_cancel"
+		android:layout_width="0px"
+		android:layout_height="62px"
+		android:layout_weight="1"
+		android:layout_marginRight="10px"
+		android:layout_marginTop="5px" 
+		android:gravity="center"  
+		android:textColor="#FFFFFF"
+		android:textSize="24px"
+		android:background="@drawable/mail_member_btn_toolbar_selector" />
+</LinearLayout>
+ 

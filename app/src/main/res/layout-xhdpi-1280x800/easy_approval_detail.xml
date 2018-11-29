@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.ex.group.approval.simple"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <!-- 타이틀 -->
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/easy_common_ex_title" />
+    
+    <!-- 결재문서타이틀 및 기안자 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:paddingLeft="@dimen/easyaproavl_space03"
+        android:paddingRight="@dimen/easyaproavl_space03" >
+
+        <LinearLayout
+            android:id="@+id/approval_detail_layout_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/easyaproavl_height03"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/approval_detail_textview_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="아버지는 나귀타고 장에 가시고 할머니는 건너마을 어머님댁에 고추먹고 맴맴~"
+                android:textColor="#3C3C3C"
+                android:textSize="@dimen/easyaproavl_textSize02"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/easyaproavl_height01"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/approval_detail_textview_writer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="김낙수"
+                android:textColor="#666666"
+                android:textSize="@dimen/easyaproavl_textSize03"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <!-- 구분선 -->
+	<LinearLayout style="@style/easyproval_divide_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- 하단 버튼 영역 -->
+        <LinearLayout
+            android:id="@+id/approval_detail_layout_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#F5F5F5"
+            android:orientation="vertical"
+            >
+            
+            <!-- 구분선 -->
+    		<LinearLayout style="@style/easyproval_divide_line" />
+    		
+    		<LinearLayout
+    		    android:layout_width="match_parent"
+    		    android:layout_height="@dimen/easyaproavl_height02"
+    		    android:orientation="horizontal"
+    		    android:gravity="center|left"
+    		    >
+    		    <Button
+	                android:id="@+id/approval_detail_button_attachment"
+	                android:layout_width="@dimen/easyaproavl_width08"
+	                android:layout_height="@dimen/easyaproavl_height03"
+	                android:layout_marginLeft="@dimen/easyaproavl_space03"
+	                />
+    		    <LinearLayout
+    		        android:layout_width="0dp"
+    		        android:layout_height="@dimen/easyaproavl_height03"
+    		        android:layout_weight="1"
+    		        android:gravity="center|right"
+    		        >
+		            <Button
+		                android:id="@+id/approval_detail_button_ok"
+		                android:layout_width="@dimen/easyaproavl_width08"
+		                android:layout_height="match_parent"
+		                />
+		            <Button
+		                android:id="@+id/approval_detail_button_cancel"
+		                android:layout_width="@dimen/easyaproavl_width08"
+		                android:layout_height="match_parent"
+		                android:layout_marginLeft="@dimen/easyaproavl_space05"
+		                android:layout_marginRight="@dimen/easyaproavl_space03"
+		                 />
+		            </LinearLayout>
+			</LinearLayout>
+        </LinearLayout>
+
+        <!-- 결재승인 박스 -->
+        <LinearLayout
+            android:id="@+id/approval_detail_layout_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="right"
+            android:padding="@dimen/easyaproavl_space01" >
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#87B6DE" >
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/approval_detail_textview_table_header_1"
+                        style="@style/easyaproavl_table_header" />
+
+                    <TextView
+                        android:id="@+id/approval_detail_textview_table_header_2"
+                        style="@style/easyaproavl_table_header" />
+
+                    <TextView
+                        android:id="@+id/approval_detail_textview_table_header_3"
+                        style="@style/easyaproavl_table_header" />
+
+                    <TextView
+                        android:id="@+id/approval_detail_textview_table_header_4"
+                        style="@style/easyaproavl_table_header" />
+
+                    <TextView
+                        android:id="@+id/approval_detail_textview_table_header_5"
+                        style="@style/easyaproavl_table_header" />
+
+                    <TextView
+                        android:id="@+id/approval_detail_textview_table_header_6"
+                        style="@style/easyaproavl_table_header"
+                        android:layout_marginRight="1dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/approval_detail_textview_table_body_1"
+                        style="@style/easyaproavl_table_body" />
+
+                    <TextView
+                        android:id="@+id/approval_detail_textview_table_body_2"
+                        style="@style/easyaproavl_table_body"
+                        android:text=" " />
+
+                    <TextView
+                        android:id="@+id/approval_detail_textview_table_body_3"
+                        style="@style/easyaproavl_table_body"
+                        android:text=" " />
+
+                    <TextView
+                        android:id="@+id/approval_detail_textview_table_body_4"
+                        style="@style/easyaproavl_table_body" />
+
+                    <TextView
+                        android:id="@+id/approval_detail_textview_table_body_5"
+                        style="@style/easyaproavl_table_body"
+                        android:text=" " />
+
+                    <TextView
+                        android:id="@+id/approval_detail_textview_table_body_6"
+                        style="@style/easyaproavl_table_body"
+                        android:layout_marginRight="1dp"
+                        android:text=" " />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        
+        <!-- WebView가 들어갈 영역 -->
+        <WebView
+            android:id="@+id/approval_detail_webview_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/approval_detail_layout_toolbar"
+            android:layout_below="@id/approval_detail_layout_table" >
+        </WebView>
+    </RelativeLayout>
+
+</LinearLayout>

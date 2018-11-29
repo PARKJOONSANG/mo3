@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:id="@+id/employee" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:background="#FFFFFF" >
+	<TableRow>
+		<LinearLayout
+			android:id="@+id/employeel" 
+			android:orientation="horizontal"
+			android:layout_width="fill_parent" 
+			android:layout_height="65px"
+			android:layout_weight="1" >
+			<Button
+				android:id="@+id/employeel_check"
+				android:layout_width="33px"
+				android:layout_height="33px"
+				android:layout_marginLeft="15px"
+				android:layout_gravity="center"
+				android:background="@drawable/mail_member_multi_select_icon" />
+			<LinearLayout
+				android:id="@+id/employeel_info"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:layout_marginTop="13px"
+				android:layout_marginLeft="12px" >
+				<TextView
+					android:id="@+id/employeel_name"
+					android:text="이름"
+					android:textSize="18px"
+					android:textColor="#000000"
+					android:singleLine="true"
+					android:layout_width="115px"
+					android:layout_height="wrap_content" />
+				<TextView
+					android:id="@+id/employeel_serial"
+					android:text="사번"
+					android:textSize="15px"
+					android:textColor="#CF1C22"
+					android:singleLine="true"
+					android:layout_width="115px"
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/employeer" 
+			android:orientation="horizontal"
+			android:layout_width="fill_parent" 
+			android:layout_height="65px"
+			android:layout_weight="1" >
+			<Button
+				android:id="@+id/employeer_check"
+				android:layout_width="33px"
+				android:layout_height="33px"
+				android:layout_marginLeft="15px"
+				android:layout_gravity="center"
+				android:background="@drawable/mail_member_multi_select_icon" />
+			<LinearLayout
+				android:id="@+id/employeer_info"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:layout_marginTop="13px"
+				android:layout_marginLeft="12px" >
+				<TextView
+					android:id="@+id/employeer_name"
+					android:text="이름"
+					android:textSize="18px"
+					android:textColor="#000000"
+					android:singleLine="true"
+					android:layout_width="115px"
+					android:layout_height="wrap_content" />
+				<TextView
+					android:id="@+id/employeer_serial"
+					android:text="사번"
+					android:textSize="15px"
+					android:textColor="#CF1C22"
+					android:singleLine="true"
+					android:layout_width="115px"
+					android:layout_height="wrap_content" />
+			</LinearLayout>
+		</LinearLayout>
+	</TableRow>
+</TableLayout>

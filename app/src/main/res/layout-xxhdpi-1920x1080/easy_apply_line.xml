@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.ex.group.approval.simple"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical" >
+
+    <!-- 타이틀 -->
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/easy_common_ex_title" />
+    
+    <!-- 중간 타이틀 -->
+    <!-- <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/common_ex_middle_center_title" /> -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <!-- 구분선 -->
+    	<LinearLayout style="@style/easyproval_divide_line" />
+
+        <!-- 기안내용요약 -->
+        <LinearLayout
+            android:id="@+id/apply_line_layout_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/easyaproavl_space01"
+            android:background="@drawable/easy_textbox"
+            android:padding="@dimen/easyaproavl_space03" >
+
+            <LinearLayout
+                android:id="@+id/apply_line_layout_summary_outside"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/apply_line_textview_summary"
+                    style="@style/easyaproavl_apply_line_summary2" />
+                <!--
+				<LinearLayout
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:orientation="horizontal"
+					android:gravity="center_vertical"
+					>
+					<TextView 
+						android:id="@+id/apply_line_textview_title"
+						style="@style/apply_line_summary"
+						android:text="외출신청서"
+						/>
+					<TextView 
+						style="@style/apply_line_summary2"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"
+						android:text=" ("
+						/>
+					<TextView 
+							android:id="@+id/apply_line_textview_formcode"
+							style="@style/apply_line_summary2"
+							android:layout_width="wrap_content" 
+							android:layout_height="wrap_content"
+							android:ellipsize="end"
+							android:singleLine="true"
+							android:text="장기근속휴가(20년)"
+							/>
+					<LinearLayout
+						android:id="@+id/apply_line_layout_outside_only"
+						android:layout_height="wrap_content"
+						android:layout_width="wrap_content"
+						android:orientation="horizontal"
+						android:layout_gravity="center_vertical"
+						android:visibility="gone"
+						>
+						<TextView 
+							style="@style/apply_line_summary2"
+							android:layout_width="wrap_content" 
+							android:layout_height="wrap_content"
+							android:text=", "
+							/>
+						<TextView 
+							android:id="@+id/apply_line_textview_targetdate"
+							style="@style/apply_line_summary2"
+							android:layout_width="wrap_content" 
+							android:layout_height="wrap_content"
+							android:text="08월 16일"
+							/>
+					</LinearLayout>
+					<TextView 
+						style="@style/apply_line_summary2"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"
+						android:text=" "
+						/>
+					<TextView 
+						android:id="@+id/apply_line_textview_fromtime"
+						style="@style/apply_line_summary2"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"
+						android:text="12:00"
+						/>
+					<TextView 
+						style="@style/apply_line_summary2"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"
+						android:text="~"
+						/>
+					<TextView
+						android:id="@+id/apply_line_textview_untiltime" 
+						style="@style/apply_line_summary2"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"
+						android:text="15:00"
+						/>
+					<TextView 
+						style="@style/apply_line_summary2"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content"
+						android:text=")"
+						/>
+				</LinearLayout>
+                -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/easyaproavl_space01"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/easyaproavl_apply_line_summary3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="⊙ 결재 기안일 : " />
+
+                    <TextView
+                        android:id="@+id/apply_line_textview_currentdate"
+                        style="@style/easyaproavl_apply_line_summary3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2011.08.12" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        
+
+        <!-- 하단 버튼 영역 -->
+        <LinearLayout
+            android:id="@+id/apply_line_layout_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#F5F5F5"
+            android:orientation="vertical"
+             >
+            
+            <!-- 구분선 -->
+			<LinearLayout style="@style/easyproval_divide_line" />
+			
+			<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="@dimen/easyaproavl_height02"
+			    android:orientation="horizontal"
+			    android:gravity="center|right"
+			    android:padding="@dimen/easyaproavl_space01"
+			    >
+	            <Button
+	                android:id="@+id/apply_line_button_ok"
+	                android:layout_width="@dimen/easyaproavl_width03"
+	                android:layout_height="@dimen/easyaproavl_height03"
+	                android:background="@drawable/easy_btn_request_approval" />
+	
+	            <Button
+	                android:id="@+id/apply_line_button_cancel"
+	                android:layout_width="@dimen/easyaproavl_width07"
+	                android:layout_height="@dimen/easyaproavl_height03"
+	                android:background="@drawable/easy_btn_cancel"
+	                android:layout_marginLeft="@dimen/easyaproavl_space05" />
+	            </LinearLayout>
+        </LinearLayout>
+        
+        <!-- 구분선 -->
+		<LinearLayout style="@style/easyproval_divide_line" />
+
+        <!-- 결재경로 지정 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/apply_line_layout_toolbar"
+            android:layout_below="@id/apply_line_layout_summary"
+            android:orientation="vertical" >
+            
+            <!-- 구분선 -->
+			<LinearLayout style="@style/easyproval_divide_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/easyaproavl_height01"
+                android:background="#F5F5F5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/easyaproavl_space01"
+                android:paddingRight="@dimen/easyaproavl_space01" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:text="결재경로 지정"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/easyaproavl_textSize04"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/apply_line_button_privateline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/easyaproavl_height01"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/easyaproavl_space04"
+                    android:background="@drawable/easy_btn_root_selector"
+                    android:padding="@dimen/easyaproavl_space04"
+                    android:text="저장된 결재경로"
+                    android:textColor="@color/easy_apply_line_privateline"
+                    android:textSize="@dimen/easyaproavl_textSize04"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            
+            <!-- 
+            구분선
+			<LinearLayout style="@style/divide_line" />
+			
+			도움말
+			<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="@dimen/height01"
+			    android:background="#F5F5F5"
+			    android:paddingLeft="@dimen/space01"
+                android:paddingRight="@dimen/space01"
+			    >
+			    <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="주소록을 눌러 결재자 추가"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/textSize04"
+                    android:textStyle="bold" />
+			</LinearLayout>
+            -->
+            
+            <!-- 구분선 -->
+			<LinearLayout style="@style/easyproval_divide_line" />
+
+            <ListView
+                android:id="@+id/apply_line_listview_line"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F5F5F5"
+                android:cacheColorHint="#00000000"
+                android:divider="#DDDDDD"
+                android:dividerHeight="1dp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10px"
+    android:paddingRight="10px">
+    <FrameLayout
+    	android:layout_width="wrap_content"
+    	android:layout_height="57px"
+    	android:background="@drawable/mail_member_memsearch1_bg">
+	    <EditText
+	    	android:id="@+id/TEXT_INPUT"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_gravity="center_vertical|right"
+	    	android:layout_marginTop="12px"
+	    	android:layout_marginLeft="100px"
+	    	android:layout_marginRight="15px"
+	    	android:paddingLeft="10px"
+	    	android:paddingRight="50px"
+	    	android:singleLine="true"
+	    	android:lines="1"
+	    	android:background="@drawable/mail_member_textfield1"/>
+	    <Button
+	    	android:id="@+id/BUTTON_INPUT"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_gravity="center_vertical|right"
+	    	android:layout_marginTop="14px"
+	    	android:layout_marginRight="19px"
+	    	android:background="@drawable/mail_member_searchbtn1_selector"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="123px"
+	android:orientation="horizontal"
+	android:background="#FFFFFF" >
+	<RelativeLayout
+		android:id="@+id/ROW_EMPLOYEE_BG"
+		android:layout_width="fill_parent"
+		android:layout_height="113px"
+		android:layout_marginTop="6px"
+		android:layout_marginLeft="6px"
+		android:layout_marginRight="6px"
+		android:background="@drawable/mail_memsearch_box_no" >
+		<LinearLayout
+			android:id="@+id/ROW_EMPLOYEE"
+			android:layout_width="fill_parent"
+			android:layout_height="104px"
+			android:orientation="vertical"
+			android:layout_alignParentLeft="true" 
+			android:gravity="center_vertical"
+			>
+			<TextView
+				android:id="@+id/ROW_EMPLOYEE_NAME"
+				android:text="employee name"
+				android:textSize="30px"
+				android:textColor="#000000"
+		    	android:textStyle="bold"
+				android:singleLine="true"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10px"
+				android:layout_marginLeft="15px" />
+			<TextView
+				android:id="@+id/ROW_EMPLOYEE_SERIAL"
+				android:text="serial"
+				android:textSize="27px"
+				android:textColor="#000000"
+		    	android:textStyle="bold"
+				android:singleLine="true"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="2px"
+				android:layout_marginLeft="15px" />
+		</LinearLayout>
+	</RelativeLayout>
+</LinearLayout>

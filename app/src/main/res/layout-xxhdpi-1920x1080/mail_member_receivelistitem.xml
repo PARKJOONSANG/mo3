@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="90px">
+	<LinearLayout
+		android:layout_width="0px"
+		android:layout_height="90px"
+		android:layout_weight="1"
+		android:layout_marginLeft="20px"
+		android:layout_gravity="center"
+		android:gravity="center_vertical">
+		<TextView
+			style="@style/mail_listText"
+			android:id="@+id/employee_name"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:gravity="center_vertical"
+			android:singleLine="true"/>
+		<TextView
+			style="@style/mail_list_company"
+			android:id="@+id/employee_data"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_marginLeft="20px"
+			android:layout_marginRight="20px"
+			android:gravity="center_vertical"
+			android:singleLine="true"
+			android:ellipsize="end"/>
+	</LinearLayout>
+	<Button
+		style="@style/mail_button.delete"
+		android:id="@+id/employee_delete"
+		android:layout_width="102px"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="10px"
+		android:layout_marginRight="10px"
+		android:layout_gravity="center"
+		android:paddingLeft="10px"
+		android:paddingRight="10px"
+		android:text="@string/mail_delete"/>
+</LinearLayout>

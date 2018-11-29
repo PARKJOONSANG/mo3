@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">   
+	<item
+		android:state_focused="false"       
+		android:drawable="@drawable/mail_search_input_nor"
+	/>
+	<item
+		android:state_focused="true"        
+		android:drawable="@drawable/mail_search_input_fback"
+	/>
+	<item
+		android:drawable="@drawable/mail_search_input_nor"
+	/>
+</selector>
